@@ -3,7 +3,9 @@ icon: ":phone:"
 order: 130
 ---
 
-Collar runs on an RFQ (request-for-quote) model, where users request pricing from a network of marketmakers who compete for the trade.
+-- RETIRED, see v1! --
+
+Collar's first version ran on an RFQ (request-for-quote) model, where users requested pricing from a network of marketmakers who compete for the trade.
 
 We're decided to implement on-chain RFQ-based model in order to make the pricing process transparent, open, and fair, in line with DeFi values.
 
@@ -26,13 +28,9 @@ There are 7 states any given quote can be in. This is tracked in the CollarEngin
 Some benefits of the RFQ model include...
 
 * Error reduction vs. TradFi
-
 * Competition
-
 * Openness
-
 * MEV Prevention
-
 * Borrower Certainty
 
 Once a trade is priced, we will know the following fields:

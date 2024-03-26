@@ -4,8 +4,6 @@ order: 90
 ---
 #### Collar is not perfect and requires a few things to be true.
 
-**Limitations**
-
 **Users must be comfortable temporarily limiting upside in order to protect downside**
     
 - This can be mitigated with rolls (we're developing a feature called auto-roll that leverage Keepers to request rolls automatically!)
