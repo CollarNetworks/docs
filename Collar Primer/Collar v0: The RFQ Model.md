@@ -1,6 +1,6 @@
 ---
 icon: ":phone:"
-tags: [guide]
+order: 130
 ---
 
 Collar runs on an RFQ (request-for-quote) model, where users request pricing from a network of marketmakers who compete for the trade.
