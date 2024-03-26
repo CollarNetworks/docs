@@ -1,8 +1,7 @@
 ---
-icon: note
+icon: ":phone:"
 tags: [guide]
 ---
-📞The RFQ Model
 
 Collar runs on an RFQ (request-for-quote) model, where users request pricing from a network of marketmakers who compete for the trade.
 
