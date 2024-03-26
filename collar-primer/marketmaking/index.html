@@ -3,39 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764802353333">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764806700227">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>The RFQ Model</title>
-    <meta name="title" content="The RFQ Model">
-    <meta name="description" content="Collar runs on an RFQ (request-for-quote) model, where users request pricing from a network of marketmakers who compete for the trade.">
+    <title>Marketmaking</title>
+    <meta name="title" content="Marketmaking">
+    <meta name="description" content="When clients submit a \"request for quote\" (RFQ), that RFQ is broadcasted to all marketmakers in the Collar Network.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.collarprotocol.xyz/collar-primer/the-rfq-model/">
+    <link rel="canonical" href="https://docs.collarprotocol.xyz/collar-primer/marketmaking/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.collarprotocol.xyz/collar-primer/the-rfq-model/">
-    <meta property="og:title" content="The RFQ Model">
-    <meta property="og:description" content="Collar runs on an RFQ (request-for-quote) model, where users request pricing from a network of marketmakers who compete for the trade.">
+    <meta property="og:url" content="https://docs.collarprotocol.xyz/collar-primer/marketmaking/">
+    <meta property="og:title" content="Marketmaking">
+    <meta property="og:description" content="When clients submit a \"request for quote\" (RFQ), that RFQ is broadcasted to all marketmakers in the Collar Network.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.collarprotocol.xyz/collar-primer/the-rfq-model/">
-    <meta property="twitter:title" content="The RFQ Model">
-    <meta property="twitter:description" content="Collar runs on an RFQ (request-for-quote) model, where users request pricing from a network of marketmakers who compete for the trade.">
+    <meta property="twitter:url" content="https://docs.collarprotocol.xyz/collar-primer/marketmaking/">
+    <meta property="twitter:title" content="Marketmaking">
+    <meta property="twitter:description" content="When clients submit a \"request for quote\" (RFQ), that RFQ is broadcasted to all marketmakers in the Collar Network.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.764802353333" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.764806700227" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.764802353333" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.764806700227" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.764802353333" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.764802353333" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.764806700227" data-turbo-eval="false" defer></script>
+    <link href="../../resources/css/katex.css?v=3.5.0" rel="stylesheet">
+    <script id="katex-js" data-cfasync="false" src="../../resources/js/katex.js?v=3.5.0" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -150,70 +151,32 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="the-rfq-model" class="break-words">
+<doc-anchor-target id="marketmaking" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#the-rfq-model">#</doc-anchor-trigger>
-        <span>The RFQ Model</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#marketmaking">#</doc-anchor-trigger>
+        <span>Marketmaking</span>
     </h1>
 </doc-anchor-target>
-<p>Collar runs on an RFQ (request-for-quote) model, where users request pricing from a network of marketmakers who compete for the trade.</p>
-<p>We&#x27;re decided to implement on-chain RFQ-based model in order to make the pricing process transparent, open, and fair, in line with DeFi values.</p>
-<p>As a client, your goal is to get as large of a loan as you need, for as long as you need, while retaining as much upside as you can, all while avoiding any form of liquidation.</p>
-<p>The marketmaker is trying to give you the best terms they can while still making money. In order to keep them honest, Collar puts them in some degree of competition with eachother so clients have the best possible experience.</p>
-<p>Here&#x27;s how it works.</p>
-<p>There are 7 states any given quote can be in. This is tracked in the CollarEngine for each client, who can only quote one trade at a time with a single marketmaker.</p>
-<ul>
-<li>NEW - means the client has nothing currently priced</li>
-<li>REQD - means the client has requested a price from a marketmaker</li>
-<li>ACKD - means the client has been acknowledged by the marketmaker</li>
-<li>PXD - means the client can now accept or reject the price</li>
-<li>OFF - means the marketmaker has pulled the price due to market movement</li>
-<li>REJ - means the client or marketmaker has rejected the pricing and a new pricing can be requested</li>
-<li>DONE - means the client has said &quot;DONE&quot; and consented to a trade</li>
-</ul>
-<p>Some benefits of the RFQ model include...</p>
-<ul>
-<li><p>Error reduction vs. TradFi</p>
-</li>
-<li><p>Competition</p>
-</li>
-<li><p>Openness</p>
-</li>
-<li><p>MEV Prevention</p>
-</li>
-<li><p>Borrower Certainty</p>
-</li>
-</ul>
-<p>Once a trade is priced, we will know the following fields:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-solidity"><code v-pre class="language-solidity">struct Pricing {
-    uint256 rfqid; // how many prices have been req'd
-    address lendAsset; // i.e. USDC
-    address marketmaker; // address of marketmaker / module
-    address client; // address of borrower
-    PxState state; // this is the above RFQ state
-    string structure; // what type of trade is being priced
-    string underlier; // i.e. ETH
-    uint256 maturityTimestamp; // seconds since Epoch (UNIX)
-    uint256 qty; // how much of the asset to hedge
-    uint256 ltv; // loan-to-value ratio i.e. 90%
-    uint256 putstrikePct; // the floor of the collar
-    uint256 callstrikePct; // the ceiling of the collar
-    string notes; // largely pointless
-}</code></pre>
-</doc-codeblock></div>
+<doc-anchor-target id="marketmakers-put-up-collateral-in-order-to-hedge-trades-and-make-money-collar-connects-clients-and-marketmakers">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#marketmakers-put-up-collateral-in-order-to-hedge-trades-and-make-money-collar-connects-clients-and-marketmakers">#</doc-anchor-trigger>
+        <span>Marketmakers put up collateral in order to hedge trades and make money. Collar connects clients and marketmakers.</span>
+    </h4>
+</doc-anchor-target>
+<p>When clients submit a &quot;request for quote&quot; (RFQ), that RFQ is broadcasted to all marketmakers in the Collar Network. In our beta stage, this role is whitelisted, but over time, it will be decentralized.</p>
+<p>Marketmakers are expected, at this time, to price and quote trades as quickly as is feasible. Similar to TradFi, consent to a trade is gradual.</p>
+<p>First, marketmakers show an indicative price to the client. If the client likes the price and has not received a better price from another marketmaker, they can request execution by placing their underlying asset into escrow via Collar&#x27;s smart contracts.</p>
+<p>Once the client has requested execution, the marketmaker has the chance to accept or decline. If the marketmakers decline the trade, the client&#x27;s asset will be returned to them. Clients can also withdraw their execution requests if they feel so inclined so long as marketmakers have not already accepted the trade.</p>
+<p>By agreeing to hedge a Collar, marketmakers are expected to deposit sufficient USDC to ensure that the client will get paid out in their best case scenario (an appreciation in the underlier to the point of the cap).</p>
+<p>Hedging this trade is inherently bearish because it pays off more when the asset falls in value, so you would want to buy some of the underlying asset upfront separately in order to counteract that force (i.e. hedging your delta). There is also volatility exposure for a fixed period of time, at a specific strike, which is a bit harder to hedge.</p>
+<p>Once all parties accept, Collar will go out to the market and swap the asset for USDC via a decentralized exchange such as Uniswap, pay out the loan to the user, then hold the remaining client collateral in escrow until maturity alongside the marketmaker&#x27;s collateral.</p>
+<p>Over the life of the trade, if the price of the underlying asset increases, the client will likely want to &quot;roll&quot; the trade higher. To do this, they can request a roll quote via a similar RFQ process as the initial trade, and marketmakers can execute these rolls using the Collar UI.</p>
+<p>Also, specific terms of the trade may be altered without marketmaker consent such as the settlement preferences (physical vs. cash vs. net-share) as these have no economic impact for marketmakers, but may have tax consequences for the user.</p>
+<p>At maturity, any party (marketmakers, clients, keepers, etc.) can mature a Collar vault by calling the &quot;mature&quot; function. Once this is called, funds are returned to the marketmaker and user in line with the new price of the asset in line with whatever terms were agreed with upfront.</p>
+<p>Collar, unlike many other DeFi protocols, does not rely on unsustainable incentives to achieve user or marketmaker adoption.</p>
+<p>From the client&#x27;s perspective, they are risking, in this case, $100k <span class="math">((100 - floor )*notional)</span> to make $80k <span class="math">((cap - 100)*notional)</span>, all while getting $900k in USDC liquidity against their ETH and preserving $1mm notl of exposure to their asset. Pretty good deal, right?</p>
 
-                                <div class="flex items-center mt-6 mb-6 clear-both">
-                                    <span>
-                                        <a href="../../tags/">
-                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
-                                        </a>
-                                        <span class="mr-2"><a href="../../tags/guide/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                                    <span>guide</span>
-                                </a></span>
-                                    </span>
-                                </div>
-                
+                                
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
@@ -221,20 +184,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/collar-v0-the-rfq-model/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Welcome</span>
+                                                <span class="block mt-1">Collar v​0: The RFQ Model</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../marketmaker-corner/bing/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/an-example-trade/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Bing</span>
+                                                <span class="block mt-1">An Example Trade</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -278,6 +241,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "The RFQ Model", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Marketmaking", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: true, tocDepth: 23 }</script>
 </body>
 </html>
