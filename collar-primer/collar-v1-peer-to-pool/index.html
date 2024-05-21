@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769597203586">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769610513531">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Collar v1: Peer to Pool</title>
     <meta name="title" content="Collar v1: Peer to Pool">
-    <meta name="description" content="Collar's Peer-to-Pool upgrade is being developed! Now, marketmakers can provide liquidity to Collar's pools in order to easily facilitate Collars.">
+    <meta name="description" content="Collar's Peer-to-Pool upgrade is under development! Soon, marketmakers will be able to provide liquidity to Collar's pools in order to easily...">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.collarprotocol.xyz/collar-primer/collar-v1-peer-to-pool/">
@@ -20,21 +20,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.collarprotocol.xyz/collar-primer/collar-v1-peer-to-pool/">
     <meta property="og:title" content="Collar v1: Peer to Pool">
-    <meta property="og:description" content="Collar's Peer-to-Pool upgrade is being developed! Now, marketmakers can provide liquidity to Collar's pools in order to easily facilitate Collars.">
+    <meta property="og:description" content="Collar's Peer-to-Pool upgrade is under development! Soon, marketmakers will be able to provide liquidity to Collar's pools in order to easily...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.collarprotocol.xyz/collar-primer/collar-v1-peer-to-pool/">
     <meta property="twitter:title" content="Collar v1: Peer to Pool">
-    <meta property="twitter:description" content="Collar's Peer-to-Pool upgrade is being developed! Now, marketmakers can provide liquidity to Collar's pools in order to easily facilitate Collars.">
+    <meta property="twitter:description" content="Collar's Peer-to-Pool upgrade is under development! Soon, marketmakers will be able to provide liquidity to Collar's pools in order to easily...">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.769597203586" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.769610513531" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769597203586" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769610513531" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769597203586" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769610513531" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -155,11 +155,28 @@
         <span>Collar v1: Peer to Pool</span>
     </h1>
 </doc-anchor-target>
-<p>Collar&#x27;s Peer-to-Pool upgrade is being developed! Now, marketmakers can provide liquidity to Collar&#x27;s pools in order to easily facilitate Collars.</p>
+<doc-anchor-target id="peer-to-pool-architecture">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#peer-to-pool-architecture">#</doc-anchor-trigger>
+        <span>Peer-to-Pool Architecture</span>
+    </h2>
+</doc-anchor-target>
+<p>Collar&#x27;s Peer-to-Pool upgrade is under development! Soon, marketmakers will be able to provide liquidity to Collar&#x27;s pools in order to easily facilitate Collars.</p>
 <p>Here&#x27;s how it works.</p>
-<p>For each unique combination of asset, collateral, duration, and LTV, there exists a pool with various ticks. These ticks, similar to uniswap v3, are roughly 1 basis point (.01%) apart by default, but may be scaled to .1% or 1% depending on the &quot;tickScaleFactor&quot; of the pool. This constrains users to a few standardized trades, making it easier for them to move forward and for marketmakers to focus on a few possible trades that are most needed and relevant. This model also creates a 1-click experience as most of the terms are ironed out by the structure of the pool. TBD WIP</p>
-<p>This leads to They can also quickly get a price on such a trade.</p>
-<p>We do this by requiring marketmakers to provide liquidity</p>
+<p>For each unique combination of asset, collateral, duration, and LTV, there exists a pool with various ticks. These ticks, similar to uniswap v3, are 1 basis point (.01%) apart by default, but may be scaled to .1% or 1% depending on the &quot;tickScaleFactor&quot; of the pool.</p>
+<p>Marketmakers provide liquidity at a given tick in order to reflect their willingness to trade at that price.  (i.e. tick 12000 with a tickScaleFactor of 1 reflects a 120% ceiling on collateral performance that a user is accepting)</p>
+<p>These pools bring marketmaker&#x27;s willingness to trade onchain and help constrain users to a few standardized trades, making it easier for both sides to transact. This model also creates a 1-click experience for users.</p>
+<p>For example, if a marketmaker is willing to show a ceiling of 120% on an ETH/USDC/90% LTV/3 month loan for up to 1 ETH at a price of 3000, they would provide 600 USDC of liquidity to the 12000 tick to reflect that. Users would see this and execute.</p>
+<p>Finally, we&#x27;re developing an open-source marketmaker SDK in order to make Collar easy to connect with and provide liquidity to.</p>
+<doc-anchor-target id="future-features">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#future-features">#</doc-anchor-trigger>
+        <span>FUTURE FEATURES</span>
+    </h2>
+</doc-anchor-target>
+<p>If a user has a large trade they&#x27;d like to execute and they&#x27;re not seeing sufficient liquidity at a price they like, we&#x27;re exploring building out a &quot;request liquidity&quot; function to facilitate this</p>
+<p>Another feature under development is &quot;just-in-time&quot; liquidity, where marketmakers commit capital to a single pool, which is only used for settlement of new vaults, and allows marketmakers to show prices across numerous pools.</p>
+<p>For example, if there are four different ETH/USDC/90% LTV pools at 1, 3, 6, and 12 months, respectively, marketmakers shouldn&#x27;t have to commit liquidity to each pool in order to show prices. If a user comes in and takes liquidity (i.e. executes on a trade) on a 6 month Collar, then the capacity of the other pools would decrease as that USDC was drawn from the MM&#x27;s master collateral account.</p>
 
                                 
                                 <!-- Required only on API pages -->
