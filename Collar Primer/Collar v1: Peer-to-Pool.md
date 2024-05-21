@@ -21,7 +21,7 @@ Finally, we're developing an open-source marketmaker SDK in order to make Collar
 
 ## FUTURE FEATURES
 
-If a user has a large trade they'd like to execute and they're not seeing sufficient liquidity at a price they like, we're exploring building out a "request liquidity" function to facilitate this
+If a user has a large trade they'd like to execute and they're not seeing sufficient liquidity at a price they like, we're exploring building out a "request liquidity" function to facilitate this.
 
 Another feature under development is "just-in-time" liquidity, where marketmakers commit capital to a single pool, which is only used for settlement of new vaults, and allows marketmakers to show prices across numerous pools.
 
