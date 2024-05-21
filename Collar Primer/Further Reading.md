@@ -2,7 +2,7 @@
 icon: ":book:"
 order: 80
 ---
-#### Collar is not perfect and requires a few things to be true.
+#### A few articles discussing the history of Collars
 
 [!ref The Inspiration Behind Collar](https://www.investopedia.com/terms/v/variable-prepaid-forward-contracts.asp)
 

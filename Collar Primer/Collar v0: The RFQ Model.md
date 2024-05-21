@@ -3,7 +3,7 @@ icon: ":phone:"
 order: 130
 ---
 
--- RETIRED, see v1! --
+-- v0 has been retired, please see v1! --
 
 Collar's first version ran on an RFQ (request-for-quote) model, where users requested pricing from a network of marketmakers who compete for the trade.
 

@@ -2,7 +2,7 @@
 icon: ":slightly_frowning_face:"
 order: 90
 ---
-#### Collar is not perfect and requires a few things to be true.
+#### Here we address key assumptions involved in building Collar
 
 **Users must be comfortable temporarily limiting upside in order to protect downside**
     
