@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764896394741">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769597203586">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.764896394741" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.769597203586" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.764896394741" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769597203586" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.764896394741" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769597203586" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -162,10 +162,10 @@
     </h4>
 </doc-anchor-target>
 <p>Welcome to Collar, the liquidation-free borrowing solution. We&#x27;ve built Collar in order to solve the liquidation problem and DeFi’s borrowing trilemma (stability of borrowed assets, liquidation of collateral, high LTV).</p>
-<p>We do this by helping connect borrowers with marketmakers via an on-chain request-for-quote (RFQ) process, resulting in a “COLlaborative Lending ARrangement” (Collar).</p>
+<p>We do this by helping connect borrowers with marketmakers and suppliers via an on-chain request-for-quote (RFQ) process, resulting in a “COLlaborative Lending ARrangement” (Collar).</p>
 <p>This arrangement allows borrowers to forego upside exposure above a ceiling temporarily in order to protect their downside below some floor price, below which the borrower can always walk away with their stablecoin loan.</p>
-<p>Note: it is important to emphasize that upside is not entirely foregone. Users can request for a marketmaker to roll a trade at any time. The Collar team is also developing &quot;auto-roll&quot; functionality in order to make this process easier.</p>
-<p>To execute a trade, each party supplies collateral to the Collar Engine, the protocol swaps the risky asset for stablecoins via a decentralized exchange, pays out the loan, and creates a Collar Vault with both parties’ remaining collateral, which is used to handle rolls, settlement, lifecycle, and maturity.</p>
+<p>Note: it is important to emphasize that upside is not entirely foregone. Users can request for a marketmaker to extend a contract at any time. The Collar team is also developing &quot;auto-roll&quot; functionality in order to make this process easier.</p>
+<p>To execute a trade, the borrower supplies collateral that will be seized if the borrower fails to repay. A supplier  The marketmaker then locks collateral swaps the risky asset for stablecoins via a decentralized exchange, pays out the loan, and creates a Collar Vault with both parties’ remaining collateral, which is used to handle rolls, settlement, lifecycle, and maturity.</p>
 <p>At maturity, collateral is divided between the marketmaker and borrower based on the final price of the asset, which is obtained via oracle, and the terms of the trade agreed upon upfront. Oracle independence is possible with Collar but the team has decided to delay this feature for the initial launch.</p>
 <p>In the subsequent paragraphs, we give a more thorough explanation of how this process works, explaining the design choices we’ve made along the way, and shedding light on the financial backdrop that made this necessary and the crypto backdrop that made this possible.</p>
 <p>This process is illustrated more in depth in the next section.</p>

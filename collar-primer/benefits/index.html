@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764896394741">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769597203586">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Benefits</title>
     <meta name="title" content="Benefits">
-    <meta name="description" content="Liquidation-Free- since the protocol is hedged in all scenarios, we do not need liquidators.">
+    <meta name="description" content="Liquidation-Free- Since the protocol swaps the asset upfront, directional risk is reversed, then mitigated by the ceiling on asset returns + the...">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.collarprotocol.xyz/collar-primer/benefits/">
@@ -20,21 +20,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.collarprotocol.xyz/collar-primer/benefits/">
     <meta property="og:title" content="Benefits">
-    <meta property="og:description" content="Liquidation-Free- since the protocol is hedged in all scenarios, we do not need liquidators.">
+    <meta property="og:description" content="Liquidation-Free- Since the protocol swaps the asset upfront, directional risk is reversed, then mitigated by the ceiling on asset returns + the...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.collarprotocol.xyz/collar-primer/benefits/">
     <meta property="twitter:title" content="Benefits">
-    <meta property="twitter:description" content="Liquidation-Free- since the protocol is hedged in all scenarios, we do not need liquidators.">
+    <meta property="twitter:description" content="Liquidation-Free- Since the protocol swaps the asset upfront, directional risk is reversed, then mitigated by the ceiling on asset returns + the...">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.764896394741" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.769597203586" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.764896394741" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769597203586" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.764896394741" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769597203586" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -162,15 +162,17 @@
     </h4>
 </doc-anchor-target>
 <ul>
-<li><strong>Liquidation-Free</strong> - since the protocol is hedged in all scenarios, we do not need liquidators.</li>
-<li><strong>Non-Custodial</strong> - both parties could abandon Collar and still receive their payoff, if any, at maturity.</li>
+<li><strong>Liquidation-Free</strong> - Since the protocol swaps the asset upfront, directional risk is reversed, then mitigated by the ceiling on asset returns + the guarantee of upside performance by the marketmakers up to the ceiling.</li>
+<li><strong>Tax-Advantaged</strong> - Borrowing tends to be a better way to sell in most tax regimes, as you&#x27;re able to withdraw wealth while deferring the tax obligation</li>
+<li><strong>Non-Custodial</strong> - Both parties could abandon Collar and still receive their payoff, if any, at maturity.</li>
 <li><strong>Liquidity-Independent</strong> - Collar does not require unsustainable yield farming in order to function.</li>
-<li><strong>Interest-Free</strong> - Any and all interest is priced into the terms you see.</li>
-<li><strong>High LTV</strong> - with Collar, LTVs are only limited by how high a marketmaker is willing to offer. LTVs above 90%, even on volatile assets, are entirely within the realm of possibility.</li>
+<li><strong>Interest-Free</strong> - Any and all interest is priced into the terms provided by the marketmaker.</li>
+<li><strong>High LTV</strong> - with Collar, LTVs are only limited by how high a marketmaker is willing to offer. LTVs above 90%, even on volatile assets, are possible but may carry tax ramifications.</li>
 <li><strong>Collateral Efficient</strong> - Collar has been designed from the ground up to require the minimal amount of collateral necessary to function without introducing credit risk into the system.</li>
 <li><strong>Asset Agnostic</strong> - The logic behind Collar is sound enough to work with any asset pair a marketmaker is willing to quote, so long as it has liquidity in any DEX.</li>
-<li><strong>Minimized Hack Surface Area</strong> - the RFQ process limits access to only the parties who are pricing up a current agreement, so even if another user were to interject their address, the Engine would decline the trade.</li>
-<li><strong>Minimized MEV Surface Area</strong> - RFQ flow also minimizes the possibility for MEV, and we&#x27;ve ensured users are not frontrun by routing traffic through private mempools such as Flashbots Protect.</li>
+<li><strong>Minimized Hack Surface Area</strong> - Hackable value is only a fraction of the total value traded for a given pool. The lower the LTV and higher the callstrike, the more collateral is at risk from a hack, as more collateral is required for these types of trades.</li>
+<li><strong>Minimized MEV Surface Area</strong> - We plan to ensure users are not frontrun by routing frontend traffic through private mempools such as Flashbots Protect.</li>
+<li><strong>Oracle Independent</strong> - Collar currently relies on Uniswap TWAP observations as opposed to offchain oracle providers.</li>
 </ul>
 <doc-anchor-target id="coming-soon">
     <h4>
@@ -178,10 +180,6 @@
         <span>Coming Soon</span>
     </h4>
 </doc-anchor-target>
-<ul>
-<li>Oracle-Free - Collar relies on MMs and DEXs to achieve natural price discovery</li>
-<li>Permissionless - at the conclusion of our private beta, we plan to open access to all borrowers and marketmakers across any asset.</li>
-</ul>
 <p><em>Note: LTVs above 90% have a tendency to trigger capital gains taxes in some jurisdictions prematurely instead of allowing for a step-up in cost basis. We do not offer tax advice.</em></p>
 
                                 

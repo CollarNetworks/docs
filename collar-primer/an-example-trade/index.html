@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764896394741">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769597203586">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.764896394741" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.769597203586" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.764896394741" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769597203586" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.764896394741" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769597203586" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -172,20 +172,20 @@
 <li>Collar Protocol Fee of 1%</li>
 <li>Solve for maximum return</li>
 </ul>
-<p>Let&#x27;s say we have a client named &quot;ABC Capital&quot; who runs a liquid token fund with various investors. Their strategy is to buy and sell tokens in order to make money. Sometimes, they&#x27;ve already allocated all their capital and want to borrow against existing tokens to deploy more capital (temporarily) without fully giving up a current position.</p>
+<p>Let&#x27;s say we have a client named &quot;ABC Capital&quot; who runs a liquid token fund with various investors. Their strategy is to buy and sell tokens in order to make money. Sometimes, they&#x27;ve already allocated all their capital and want to borrow against existing tokens to deploy more capital (temporarily) without fully giving up a current position. Sometimes, they want to earn real yield on their invested capital.</p>
 <p>One of the traders heard about Collar at a conference and decides to head on over to collarprotocol.xyz, click &quot;Enter App&quot; and connect their wallet. From then on, these are the steps they would take, and the corresponding action on the backend that occurs.</p>
 <p>Let&#x27;s name our most competitive and active marketmaker &quot;Jane Sigma Research&quot; or JSR.</p>
 <p>Over time, we plan to make this user experience as seamless and frictionless as possible through automation and tooling.</p>
-<ol>
-<li><p>ABC Cap requests a price for a 3 month Collar on their ETH, denominated in USDC with a 90% LTV (loan-to-value ratio).</p>
+<ol start="0">
+<li><p>JSR supplies 1000 USDC of liquidity at a maximum return of 110% to the 3 month, 90% LTV, ETH-USDC pool, reflecting a willingness to be the counterparty for an ETH forward contract.</p>
 </li>
-<li><p>The pricing request is broadcasted to the marketmakers</p>
+<li><p>ABC Cap arrives to the collarprotocol.xyz website, selects the terms they&#x27;d like, sees there is enough there to borrow against 10 ETH with a max return of 110%, puts up 10 ETH and clicks &quot;borrow&quot;.</p>
 </li>
-<li><p>Marketmakers submit bids, JSR&#x27;s is the highest at 109% max return</p>
+<li><p>ABC Cap&#x27;s ETH is stored in Collar&#x27;s collateral ringfence.</p>
 </li>
-<li><p>ABC Cap awards the trade to JSR and deposits the 100 ETH</p>
+<li><p>The protocol then swaps the supplied ETH in a decentralized exchange, such as Uniswap v3, for USDC (note: this incurs some slippage). The price at which this swap executes determines the exact maximum and minimum of the vault (i.e. swapping 1 ETH -&gt; 999 USDC (0.1% slippage) results in a ceiling of 1098.9 USDC and a floor of 899.1 USDC).</p>
 </li>
-<li><p>JSR accepts the trade and deposits the 9,000 USDC of collateral.</p>
+<li><p>Of the 999 USDC of proceeds from this swapped ETH, 899.1 is lent to the user, and 99.9 is deposited into a vault in case the collateral declines in value, in order to incentivize marketmakers. This vault cannot be accessed by anyone until the maturity timestamp is greater than that of block.timestamp (a measurement native to the blockchain).</p>
 </li>
 </ol>
 <div class="flex mb-6">
@@ -202,32 +202,38 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Expert Note</h5>
-<p>JSR understands hedging Collars is bearish, so they go to their favorite source of liquidity and get long ETH to isolate the volatility risk from the directional risk produced by the trade. This is called &quot;scalping gamma&quot; and it&#x27;s how marketmakers can make money trading volatility itself.</p>
+<p>JSR understands hedging Collars is a bearish trade, so once the trade is executed they go to their favorite source of liquidity and get long ETH to isolate the volatility risk from the directional risk produced by the trade. This is called &quot;scalping gamma&quot; and it&#x27;s how marketmakers can make money by isolating and trading volatility itself.</p>
         </div>
     </div>
 </div>
-<ol start="6">
-<li><p>The 100 ETH is swapped via decentralized exchange (i.e. Uniswap V3) (note: this may incur slippage)</p>
-</li>
-<li><p>Let&#x27;s say the filled price on that ETH/USDC swap is 1,000 (after slippage from 1,001) for a total proceeds of 100,000 + the marketmaker&#x27;s 9,000 USDC for 109,000 USDC total sitting in the engine.</p>
-</li>
-<li><p>The protocol takes a small fee for providing security to both parties of 1% of total value traded (TVT) (note: revenue is necessary to sustain development activity)</p>
-</li>
-<li><p>Since the requested LTV was 90%, the client receives 89,000 USDC as a loan after fees, taking us down to 19,000 USDC remaining. These funds are placed in a vault that cannot be accessed by anyone once its maturity timestamp is greater than that of block.timestamp (a measurement native to the blockchain).</p>
-</li>
-<li><p>A month goes by and ETH is up 7% to vs. USDC and ABC Cap decides they want to take a bit more cash off the table and extend their upside exposure.</p>
-</li>
-<li><p>They come back to the Collar UI, select the vault, and request to roll the trade.</p>
-</li>
-<li><p>JSR sees this request and offers a floor of 970 USDC and a max return of 1170 USDC.</p>
-</li>
-<li><p>ABC Cap accepts, the terms are updated on the vault&#x27;s smart contract, JSR posts additional 7,000 USDC, and ABC Cap unlocks 6,000 USDC on their loan net of protocol fees.</p>
-</li>
+<doc-anchor-target id="eth-up-7-scenario">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#eth-up-7-scenario">#</doc-anchor-trigger>
+        <span>ETH Up 7% Scenario</span>
+    </h2>
+</doc-anchor-target>
+<p>5a. A month goes by and ETH is up 7% vs. USDC, so ABC Cap decides they want to take a bit more cash off the table and extend their upside exposure. JSR saw the same thing and in order to facilitate, shows an offer to extend and restrike the contract, depositing 70 USDC.</p>
+<p>6a. ABC Cap comes back to the Collar UI, finds the vault, and see that JSR has offered ABC Cap an additional 70 USDC on their loan if they were to extend the trade. ABC Cap clicks &quot;extend&quot;, resetting the terms of the trade and causing minimal cash to change hands.</p>
+<doc-anchor-target id="eth-down-30-scenario">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#eth-down-30-scenario">#</doc-anchor-trigger>
+        <span>ETH Down 30% Scenario</span>
+    </h2>
+</doc-anchor-target>
+<p>5b. A month goes by and ETH is down 30% vs. USDC, but ABC Cap believes in the asset and want to extend their trade. JSR saw the same thing and in order to facilitate, shows an offer to extend and restrike the contract by 3 months, demanding 0.29 ETH to do so (200 USDC of losses, divided by an ETH price of 700, rounded up to reflect hedging cost).</p>
+<p>6b. ABC Cap comes back to the Collar UI, finds the vault, and see that JSR has offered ABC Cap an extension if they can post 0.29 ETH. ABC Cap clicks &quot;extend&quot;, resetting the terms of the trade, with minimal cash / collateral changing hands. If ABC Cap couldn&#x27;t afford to extend the trade and ignore the offer, then at maturity the marketmaker would receive the full value of the vault after it matures.</p>
+<doc-anchor-target id="at-maturity">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#at-maturity">#</doc-anchor-trigger>
+        <span>At Maturity</span>
+    </h2>
+</doc-anchor-target>
+<ol start="7">
 <li><p>As the trade nears maturity, ETH drops to a price of 500 USDC</p>
 </li>
-<li><p>ABC Cap fortunately has now withdrawn 95,000 USDC and the market has already absorbed that liquidity, preventing situations like CRV from creating liquidation cascades, which reduces volatility for the industry as a whole</p>
+<li><p>Currently, any party can mature a vault so long as block.timestamp exceeds the maturity date timestamp.</p>
 </li>
-<li><p>However, their remaining portion of the USDC will now be paid out to JSR in line with the rules of the vault. They will call the mature function after block.timestamp has passed via the UI, claim their USDC, and be off to hedge more trades.</p>
+<li><p>At maturity, the vault observes a Uniswap TWAP oracle to decide how much collateral to pay out to a given user, in line with the payout diagram displayed on the app&#x27;s homepage.</p>
 </li>
 </ol>
 
