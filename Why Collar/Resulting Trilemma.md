@@ -1,7 +1,8 @@
 ---
-icon: ":trident:"
+# icon: ":trident:"
 order: 90
 ---
+
 #### Among the many difficulties in designing a perfect on-chain borrowing solution, a few stand out among the rest.
 
 **How do you design a DeFi borrowing solution with...**

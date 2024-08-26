@@ -1,7 +1,8 @@
 ---
-icon: ":raising_hand:"
+# icon: ":raising_hand:"
 order: 100
 ---
+
 #### Centralization, Liquidations, and Credit
 
 1. Centralization
