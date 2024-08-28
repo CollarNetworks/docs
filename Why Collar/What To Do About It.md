@@ -1,12 +1,13 @@
 ---
-icon: ":exclamation:"
+# icon: ":exclamation:"
 order: 190
 ---
+
 #### Buy Hard Assets, Borrow Against Them, Defer Taxes
 
 > "Buy land, they're not making it anymore." - Mark Twain
 
-This devaluation makes scarce, desirable assets like waterfront real estate, successful stocks, or cryptocurrencies like Bitcoin and Ethereum more attractive, as their nominal value rises over long time horizons while their intrinsic value remains steady amid depreciating fiat money.
+This devaluation makes scarce, desirable assets like waterfront real estate, successful stocks, or cryptocurrencies like Bitcoin and wstETHereum more attractive, as their nominal value rises over long time horizons while their intrinsic value remains steady amid depreciating fiat money.
 
 In the long term, this makes such assets phenomenal vehicles for leverage, so long as liquidation or margin calls can be avoided in the short term or the assets cashflow sufficiently to sustain the debt.
 

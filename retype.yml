@@ -2,10 +2,17 @@ input: .
 output: .retype
 url: https://docs.collarprotocol.xyz
 branding:
-  title: Collar Protocol
+  colors:
+    background: "#fcfc95"
+  logo: /static/collarlogo.png
+  logoDark: /static/collarlogodark.png
+  # title: "'"
   label: Docs
+  logoAlign: left
+
 # links:
 # - text: Getting Started
 #   link: https://retype.com/guides/getting-started/
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
+favicon: /static/favicon.ico

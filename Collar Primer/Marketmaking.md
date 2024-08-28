@@ -1,11 +1,13 @@
 ---
-icon: ":chart_with_upwards_trend:"
-order: 120
+# icon: ":chart_with_upwards_trend:"
+order: 93
 ---
 
-#### Marketmakers put up collateral in order to hedge trades and make money. Collar connects clients and marketmakers.
+#### Marketmakers quote prices offchain and provide liquidity onchain
 
-Marketmakers are expected, at this time, to quote potential trades by providing liquidity.
+Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale of the asset. If the marketmaker successfully hedges their delta over the life of the trade and the realized volatility of the trade over its life comes in higher than the implied price they bought it for, the marketmaker should profit.
+
+Link here explaining this ["gamma scalping"](https://www.schwab.com/learn/story/gamma-scalping-primer) mechanism.
 
 By agreeing to hedge a Collar, marketmakers are expected to deposit sufficient USDC to ensure that the client will get fully paid out in the best case scenario (appreciation of the underlier to the ceiling).
 
@@ -18,3 +20,7 @@ Over the life of the trade, if the price of the underlying asset increases, the 
 At maturity, any party (marketmakers, clients, keepers, etc.) can mature a Collar vault by calling the "mature" function. Once this is called, funds are paid out to the marketmaker and user in line with the final price of the asset (as determined by Uniswap v3's TWAP) in line with whatever terms were agreed with upfront via the peer-to-pool execution mechanism
 
 Collar, unlike many other DeFi protocols, does not rely on unsustainable incentives to achieve user or marketmaker adoption and instead relies on marketmakers acting in their self-interest.
+
+For now, marketmaking is permissionless onchain and access to the Offchain Intent Platform is whitelisted. This will be decentralized over time. This whitelist currently contains three Founding Marketmakers, similar to [Arbitrum Nova's Data Availability Committee](https://docs.arbitrum.foundation/concepts/security-council).
+
+If you're interested in becoming a marketmaker for the Offchain Intent Platform, you can submit an inquiry to hello@collarnetworks.com . Requirements include full API pricing of crypto-linked options.

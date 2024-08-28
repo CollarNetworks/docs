@@ -1,7 +1,8 @@
 ---
-icon: ":earth_asia:"
+# icon: ":earth_asia:"
 order: 200
 ---
+
 #### Governments Spend Money, Inflate Currency, and Tax Citizens
 
 > "The United States can pay any debt it has because we can always print money to do that. So there is zero probability of default” - Alan Greenspan
