@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769610605110">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778187085120">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Marketmaking</title>
     <meta name="title" content="Marketmaking">
-    <meta name="description" content="Marketmakers are expected, at this time, to quote potential trades by providing liquidity.">
+    <meta name="description" content="Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale...">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.collarprotocol.xyz/collar-primer/marketmaking/">
@@ -20,21 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.collarprotocol.xyz/collar-primer/marketmaking/">
     <meta property="og:title" content="Marketmaking">
-    <meta property="og:description" content="Marketmakers are expected, at this time, to quote potential trades by providing liquidity.">
+    <meta property="og:description" content="Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.collarprotocol.xyz/collar-primer/marketmaking/">
     <meta property="twitter:title" content="Marketmaking">
-    <meta property="twitter:description" content="Marketmakers are expected, at this time, to quote potential trades by providing liquidity.">
+    <meta property="twitter:description" content="Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale...">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.769610605110" rel="stylesheet">
+    <link href="../../static/favicon.ico" rel="icon">
+    <link href="../../resources/css/retype.css?v=3.5.0.778187085120" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769610605110" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.778187085120" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769610605110" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.778187085120" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -49,8 +50,11 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
-                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Collar Protocol</span>
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                            <span class="grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../static/collarlogo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../static/collarlogodark.png">
+                            </span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
         
@@ -155,19 +159,22 @@
         <span>Marketmaking</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="marketmakers-put-up-collateral-in-order-to-hedge-trades-and-make-money-collar-connects-clients-and-marketmakers">
+<doc-anchor-target id="marketmakers-quote-prices-offchain-and-provide-liquidity-onchain">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#marketmakers-put-up-collateral-in-order-to-hedge-trades-and-make-money-collar-connects-clients-and-marketmakers">#</doc-anchor-trigger>
-        <span>Marketmakers put up collateral in order to hedge trades and make money. Collar connects clients and marketmakers.</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#marketmakers-quote-prices-offchain-and-provide-liquidity-onchain">#</doc-anchor-trigger>
+        <span>Marketmakers quote prices offchain and provide liquidity onchain</span>
     </h4>
 </doc-anchor-target>
-<p>Marketmakers are expected, at this time, to quote potential trades by providing liquidity.</p>
+<p>Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale of the asset. If the marketmaker successfully hedges their delta over the life of the trade and the realized volatility of the trade over its life comes in higher than the implied price they bought it for, the marketmaker should profit.</p>
+<p>Link here explaining this <a href="https://www.schwab.com/learn/story/gamma-scalping-primer">&quot;gamma scalping&quot;</a> mechanism.</p>
 <p>By agreeing to hedge a Collar, marketmakers are expected to deposit sufficient USDC to ensure that the client will get fully paid out in the best case scenario (appreciation of the underlier to the ceiling).</p>
 <p>Hedging this trade is inherently bearish because marketmakers make the most when the asset falls in value. As such, they naturally would want to go long the underlying asset in response to a completed trade (i.e. hedging your delta). There is also volatility exposure for a fixed period of time, at a specific strike, which is a bit harder to hedge.</p>
 <p>Upon client execution, Collar immediately swaps the asset for USDC via a decentralized exchange such as Uniswap, pays out the loan to the user, then holds the remaining client collateral in escrow until maturity alongside the marketmaker&#x27;s collateral.</p>
 <p>Over the life of the trade, if the price of the underlying asset increases, the client will likely want to &quot;roll&quot; the trade higher. To do this, they can accept an extension offer from a marketmaker.</p>
 <p>At maturity, any party (marketmakers, clients, keepers, etc.) can mature a Collar vault by calling the &quot;mature&quot; function. Once this is called, funds are paid out to the marketmaker and user in line with the final price of the asset (as determined by Uniswap v3&#x27;s TWAP) in line with whatever terms were agreed with upfront via the peer-to-pool execution mechanism</p>
 <p>Collar, unlike many other DeFi protocols, does not rely on unsustainable incentives to achieve user or marketmaker adoption and instead relies on marketmakers acting in their self-interest.</p>
+<p>For now, marketmaking is permissionless onchain and access to the Offchain Intent Platform is whitelisted. This will be decentralized over time. This whitelist currently contains three Founding Marketmakers, similar to <a href="https://docs.arbitrum.foundation/concepts/security-council">Arbitrum Nova&#x27;s Data Availability Committee</a>.</p>
+<p>If you&#x27;re interested in becoming a marketmaker for the Offchain Intent Platform, you can submit an inquiry to <a href="mailto:hello@collarnetworks.com">hello@collarnetworks.com</a> . Requirements include full API pricing of crypto-linked options.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -177,20 +184,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/collar-v1-peer-to-pool/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/risks-and-limitations/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Collar v​1: Peer to Pool</span>
+                                                <span class="block mt-1">Risks and Limitations</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/an-example-trade/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/monetization/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">An Example Trade</span>
+                                                <span class="block mt-1">Monetization</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>

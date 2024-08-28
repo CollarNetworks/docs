@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769610605110">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778187085120">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Benefits</title>
     <meta name="title" content="Benefits">
-    <meta name="description" content="Liquidation-Free- Since the protocol swaps the asset upfront, directional risk is reversed, then mitigated by the ceiling on asset returns + the...">
+    <meta name="description" content="Liquidation-Free- Since the protocol swaps the asset upfront, directional risk is removed.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.collarprotocol.xyz/collar-primer/benefits/">
@@ -20,21 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.collarprotocol.xyz/collar-primer/benefits/">
     <meta property="og:title" content="Benefits">
-    <meta property="og:description" content="Liquidation-Free- Since the protocol swaps the asset upfront, directional risk is reversed, then mitigated by the ceiling on asset returns + the...">
+    <meta property="og:description" content="Liquidation-Free- Since the protocol swaps the asset upfront, directional risk is removed.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.collarprotocol.xyz/collar-primer/benefits/">
     <meta property="twitter:title" content="Benefits">
-    <meta property="twitter:description" content="Liquidation-Free- Since the protocol swaps the asset upfront, directional risk is reversed, then mitigated by the ceiling on asset returns + the...">
+    <meta property="twitter:description" content="Liquidation-Free- Since the protocol swaps the asset upfront, directional risk is removed.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.769610605110" rel="stylesheet">
+    <link href="../../static/favicon.ico" rel="icon">
+    <link href="../../resources/css/retype.css?v=3.5.0.778187085120" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769610605110" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.778187085120" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769610605110" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.778187085120" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -49,8 +50,11 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
-                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Collar Protocol</span>
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                            <span class="grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../static/collarlogo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../static/collarlogodark.png">
+                            </span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
         
@@ -155,32 +159,25 @@
         <span>Benefits</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="collar-is-currently">
+<doc-anchor-target id="collar-is">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#collar-is-currently">#</doc-anchor-trigger>
-        <span>Collar is currently...</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#collar-is">#</doc-anchor-trigger>
+        <span>Collar is...</span>
     </h4>
 </doc-anchor-target>
 <ul>
-<li><strong>Liquidation-Free</strong> - Since the protocol swaps the asset upfront, directional risk is reversed, then mitigated by the ceiling on asset returns + the guarantee of upside performance by the marketmakers up to the ceiling.</li>
-<li><strong>Tax-Advantaged</strong> - Borrowing tends to be a better way to sell in most tax regimes, as you&#x27;re able to withdraw wealth while deferring the tax obligation</li>
-<li><strong>Non-Custodial</strong> - Both parties could abandon Collar and still receive their payoff, if any, at maturity.</li>
+<li><strong>Liquidation-Free</strong> - Since the protocol swaps the asset upfront, directional risk is removed. But what if the price goes up? This is mitigated by the return cap + the marketmakers guaranteeing performance on the upside to the ceiling. in exchange for the chance to make money if the asset price declines.</li>
+<li><strong>Tax-Advantaged</strong> - Borrowing can be a better way to sell in most tax regimes, allowing borrowers to withdraw wealth while deferring tax obligations. <em>Note: in some jurisdictions, this will require a feature under development called supplier mode, which is under development.</em></li>
+<li><strong>Non-Custodial</strong> - Both parties could abandon Collar and would still receive their payoff at maturity, since anyone can mature a position onchain.</li>
 <li><strong>Liquidity-Independent</strong> - Collar does not require unsustainable yield farming in order to function.</li>
-<li><strong>Interest-Free</strong> - Any and all interest is priced into the terms provided by the marketmaker.</li>
-<li><strong>High LTV</strong> - with Collar, LTVs are only limited by how high a marketmaker is willing to offer. LTVs above 90%, even on volatile assets, are possible but may carry tax ramifications.</li>
+<li><strong>Interest-Free</strong> - Any interest is priced into the terms provided by the marketmaker. Slippage is the main cost paid by borrowers.</li>
+<li><strong>High LTV</strong> - LTVs are only economically limited by how high a marketmaker is willing to offer. LTVs approaching 100%, even on volatile assets, are possible but may carry tax ramifications. For now, LTVs must be added via the ConfigHub (multi-sig gated) for security purposes.</li>
 <li><strong>Collateral Efficient</strong> - Collar has been designed from the ground up to require the minimal amount of collateral necessary to function without introducing credit risk into the system.</li>
-<li><strong>Asset Agnostic</strong> - The logic behind Collar is sound enough to work with any asset pair a marketmaker is willing to quote, so long as it has liquidity in any DEX.</li>
-<li><strong>Minimized Hack Surface Area</strong> - Hackable value is only a fraction of the total value traded for a given pool. The lower the LTV and higher the callstrike, the more collateral is at risk from a hack, as more collateral is required for these types of trades.</li>
-<li><strong>Minimized MEV Surface Area</strong> - We plan to ensure users are not frontrun by routing frontend traffic through private mempools such as Flashbots Protect.</li>
-<li><strong>Oracle Independent</strong> - Collar currently relies on Uniswap TWAP observations as opposed to offchain oracle providers.</li>
+<li><strong>Asset Agnostic</strong> - The logic behind Collar is scalable to any ERC20 asset pair a marketmaker is willing to quote, so long as it has liquidity in any DEX. For now, asset pairs must be added via the ConfigHub (multi-sig gated) for security purposes.</li>
+<li><strong>Minimized Hack Surface Area</strong> - Hackable value is only a fraction of the total value traded for a given Collar. The lower the LTV and higher the callstrike, the more collateral is at risk from a hack, as more collateral is required for these types of trades.</li>
+<li><strong>Minimized MEV Surface Area</strong> - We plan to ensure users are not frontrun by routing frontend traffic through private mempools such as Flashbots Protect. For layer 2 deployments, MEV is currently largely a nonissue.</li>
+<li><strong>Oracle Independent</strong> - Collar currently relies on Uniswap TWAP observations as opposed to offchain price providers. These Uniswap TWAP oracles are available on far more assets than Chainlink, etc. This could be made modular in the future.</li>
 </ul>
-<doc-anchor-target id="coming-soon">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#coming-soon">#</doc-anchor-trigger>
-        <span>Coming Soon</span>
-    </h4>
-</doc-anchor-target>
-<p><em>Note: LTVs above 90% have a tendency to trigger capital gains taxes in some jurisdictions prematurely instead of allowing for a step-up in cost basis. We do not offer tax advice.</em></p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -190,20 +187,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/an-example-trade/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/example-trade/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">An Example Trade</span>
+                                                <span class="block mt-1">Example Trade</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/limitations/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/risks-and-limitations/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Limitations</span>
+                                                <span class="block mt-1">Risks and Limitations</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
