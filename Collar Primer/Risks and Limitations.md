@@ -7,10 +7,10 @@ order: 95
 
 **Hack Risk**
 
-DeFi protocols have been hacked before and there is a large incentive to steal user assets from the protocol. Collar has been designed in such a way that minimizes hack surface area to ~25% of TVT (Total Volume Traded), since users take the majority out as a loan day one.
+DeFi protocols have been hacked before and there is a large incentive to steal user assets from the protocol. Collar has been designed in such a way that minimizes hack surface area to, on average, around ~25% of TVT (Total Volume Traded), since users take the majority out as a loan day one.
 
 !!!
-Note on mitigation: Collar works with the best security firms in the space to ensure user funds are protected from hackers. Collar will also run a bug bounty program to disincentivize hacking and encourage bugs to be reported for a smaller, legal payoff.
+Note on mitigation: Collar works with top security firms in the space to ensure user funds are protected from hackers. Collar will also run a bug bounty program to disincentivize hacking and encourage bugs to be reported for a smaller, legal payoff.
 !!!
 
 **Layer 2 Risks**
@@ -45,7 +45,7 @@ Note on mitigation: Collar works with the best security firms in the space to en
 
 **Lack of desire for marketmakers to quote the most volatile of tail assets**
 
-- Marketmakers may not be willing to quote the latest dog, frog, or memecoin
+- Marketmakers may not be willing to quote the latest dog, frog, or memecoin.
 
 **Market impact upon sale of assets into DEX**
 

@@ -12,11 +12,11 @@ Collar is short for “COLlateralized Lending ARrangement”. It also refers to 
 
 #### Is Collar live?
 
-Collar is currently in Private Beta as we finalize key features and iterate on user feedback. You can request access here.
+Collar is currently in Private Beta as we finalize key features and iterate on user feedback. You can request access [here](https://pukzi11x7je.typeform.com/to/Z5ZnQlOJ).
 
 #### Who should use Collar?
 
-Collar, like other borrowing protocols, is used by holders of concentrated token positions such as family offices, high net worth individuals, foundations, DAOs, miners, validators, traders, degens and more.
+Collar, like other borrowing protocols, will predominantly be used by holders of concentrated token positions such as family offices, high net worth individuals, foundations, DAOs, miners, validators, traders, degens and more.
 
 #### How do you prevent liquidations?
 
@@ -28,7 +28,7 @@ The protocol swaps the collateral to the borrower’s chosen liability token (ty
 
 #### But what if the asset appreciates in value?
 
-providers post stablecoins upfront to guarantee the borrower’s upside exposure to the cap.
+Providers post stablecoins upfront to guarantee the borrower’s upside exposure to the cap.
 
 #### Why should providers use Collar?
 

@@ -5,7 +5,7 @@ order: 110
 
 <!-- eventually will be two example trades, one swap mode one supplier mode  -->
 
-Sample loan terms:
+Below, we walk through a sample Collar.
 
 - Client wants to borrow against wstETH
 - Client wants their loan in USDC
@@ -16,23 +16,23 @@ Sample loan terms:
 - Collar Protocol Fee of 1%
 - Solve for maximum return
 
-Let's say we have a client named "ABC Capital" who runs a liquid token fund with various investors. Their strategy is to buy and sell tokens in order to make money. At times, they are fully allocated to wstETH, but want to buy a token that has sold off sharply for a month or so. ABC can use Collar to borrow against existing tokens and deploy more capital (temporarily) without giving up exposure to their current position.
+Let's say we have a client named "ABC Capital" who runs a liquid token fund with various investors. Their strategy is to buy and sell tokens in order to make money. At times, they are fully allocated to wstETH, but want to buy a new token. The problem is, ABC would have to sell wstETH in order to do so, limiting their exposure to wstETH. They could use AAVE to borrow against their wstETH, but then they'd be at risk of forced liquidation. Instead, ABC leverages Collar to borrow against existing tokens and deploy more capital (temporarily) without giving up exposure to their current position.
 
 One of their portfolio managers heard about Collar at a conference and decides to head on over to collarprotocol.xyz, click "Enter App" and connect their wallet. From then on, these are the steps they would take, and the corresponding action on the backend that occurs.
 
 Let's name our most competitive and active marketmaker "Jane Sigma Research" or JSR. JSR is hooked up via API to the Offchain Intent Platform and streams prices constantly, providing a phenomenally fast user experience.
 
-0. ABC Cap selects the terms they'd like (see above) and clicks request quote. Within seconds, they get back three potential return caps, or "quotes": 108%, 109%, and JSR's price 110%.
+0. ABC Cap selects the terms they'd like (see above) and clicks request quote. Within seconds, they get back three potential return caps, or "quotes": 108%, 109%, and JSR's price 110%. These quotes came from marketmakers who quickly communicated their preferences via the Offchain Intent Platform.
 
-1. ABC Cap tells JSR, via the Collar Frontend and Offchain Intent Platform, that they have been selected as the winner.
+1. ABC Cap agrees to move forward, notifying JSR via the Collar Frontend and Offchain Intent Platform, that they have been selected as the winner.
 
-2. JSR creates an onchain Offer reflecting the terms ABC Cap initially requested, containing 20,000 USDC, reflecting the collateral requirements of the Collar Protocol of 110% - 100% = 10% _ 100 wstETH _ 2000 USDC per wstETH, the best case returns for the user. This reflects JSR's willingness to be counterparty to the trade.
+2. JSR prepares an onchain Offer reflecting the terms ABC Cap initially requested, containing 20,000 USDC, reflecting the collateral requirements of the Collar Protocol of $110% - 100% = 10% * 100 wstETH * 2000 USDC per wstETH = 20,000 USDC$, the best case returns for the user. This reflects JSR's willingness to facilitate the trade.
 
-3. ABC Cap then accepts this Offer, completing the trade, depositing their wstETH
+3. ABC Cap then accepts the Offer, completing the trade, depositing wstETH to the protocol.
 
 4. The protocol then swaps the supplied wstETH in a decentralized exchange, such as Uniswap v3, for USDC (note: this incurs some slippage). The price at which this swap executes determines the exact maximum and minimum of the vault (i.e. swapping 1 wstETH -> 1999 USDC (0.05% slippage) results in a ceiling of 2198.9 USDC and a floor of 1799.1 USDC).
 
-5. Of the 1999 USDC of proceeds from this swapped wstETH, 1799.1 is sent to the borrower as the Loan Balance, and 199.9 is deposited into a vault in case the collateral declines in value, incentivizing marketmakers. This vault cannot be accessed by anyone until the maturity timestamp is greater than that of block.timestamp (a measurement native to the blockchain).
+5. Of the 1999 USDC of proceeds from this swapped wstETH, 1799.1 is sent to the borrower as the Loan Balance, and 199.9 is deposited into a vault in case the collateral declines in value, incentivizing marketmakers in a downside scenario. This vault cannot be accessed by anyone until the maturity timestamp is greater than that of block.timestamp (a measurement native to the blockchain).
 
 !!! Expert Note
 JSR understands hedging Collars is a bearish trade, so once the trade is executed they go to their favorite source of liquidity and get long wstETH to isolate the volatility risk from the directional risk produced by the trade. This is called "scalping gamma" and it's how marketmakers can make money by isolating and trading volatility itself.
@@ -56,4 +56,4 @@ A month goes by and wstETH is down 30% vs. USDC, but ABC Cap believes in the ass
 
 8. Currently, any party can mature a vault so long as block.timestamp exceeds the maturity date timestamp. Collar's Offchain Intent Platform also helps facilitate this.
 
-9. At maturity, the vault observes the TWAP oracle provided natively by Uniswap to decide how much collateral to pay out to a given user, in line with the payout diagram displayed on the app's homepage. This oracle is extremely expensive to manipulate over long periods of time (minutes of constant buying onchain).
+9. At maturity, the vault observes the Uniswap TWAP oracle provided natively by Uniswap to decide how much collateral to pay out to a given user, in line with the payout diagram displayed on the app's homepage. This oracle is extremely expensive to manipulate over long periods of time (minutes of constant buying onchain).

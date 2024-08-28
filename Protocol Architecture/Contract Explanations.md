@@ -5,7 +5,7 @@ order: 1000
 
 #### ConfigHub.sol
 
-Handles address tracking of contracts for the protocol
+Handles address tracking of contracts for the protocol. Also allows various key protocol parameters to be tweaked.
 
 #### CollarTakerNFT.sol
 

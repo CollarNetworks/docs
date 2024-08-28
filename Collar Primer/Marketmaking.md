@@ -5,7 +5,7 @@ order: 93
 
 #### Marketmakers quote prices offchain and provide liquidity onchain
 
-Marketmakers are essentially offering a payout equivalent to a call spread to the borrower to replace exposure lost from the upfront sale of the asset. If the marketmaker successfully hedges their delta over the life of the trade and the realized volatility of the trade over its life comes in higher than the implied price they bought it for, the marketmaker should profit.
+Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale of the asset. If the marketmaker successfully hedges their delta over the life of the trade and the realized volatility of the trade over its life comes in higher than the implied price they bought it for, the marketmaker should profit.
 
 Link here explaining this ["gamma scalping"](https://www.schwab.com/learn/story/gamma-scalping-primer) mechanism.
 
