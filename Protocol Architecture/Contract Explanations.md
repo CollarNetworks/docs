@@ -29,11 +29,11 @@ This contract acts as the main entry point for borrowers in the Collar Protocol,
 
 Creates a new roll offer for an existing taker NFT position and pulls the provider NFT.
 
-The provider must own the ProviderPositionNFT for the position to be rolled
+The provider must own the ProviderPositionNFT for the position to be rolled.
 
 If the provider will need to provide cash on execution, they must approve the contract to pull that cash when submitting the offer (and have those funds available), so that it is executable. Offer may become unexecutable due to insufficient provider cash approval or balance.
 
-Rolls are executed by settling the existing paired position and creating a new one. This pulls and distributes cash, pulls taker NFT, and sends out new taker and provider NFTs. The caller must be the owner of the CollarTakerNFT for the position being rolled, and must have approved sufficient cash if cash needs to be paid (depends on offer and current price)
+Rolls are executed by settling the existing paired position and creating a new one. This pulls and distributes cash, pulls taker NFT, and sends out new taker and provider NFTs. The caller must be the owner of the CollarTakerNFT for the position being rolled, and must have approved sufficient cash if cash needs to be paid (depends on offer and current price).
 
             The contract balance    = takerSettled + providerSettled
 

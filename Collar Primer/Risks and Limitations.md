@@ -7,7 +7,7 @@ order: 95
 
 **Hack Risk**
 
-DeFi protocols have been hacked before and there is a large incentive to steal user assets from the protocol. Collar has been designed in such a way that minimizes hack surface area to, on average, around ~25% of TVT (Total Volume Traded), since users take the majority out as a loan day one.
+- DeFi protocols have been hacked before and there is a large incentive to steal user assets from the protocol. Collar has been designed in such a way that minimizes hack surface area to, on average, around ~25% of TVT (Total Volume Traded), since users take the majority out as a loan day one.
 
 !!!
 Note on mitigation: Collar works with top security firms in the space to ensure user funds are protected from hackers. Collar will also run a bug bounty program to disincentivize hacking and encourage bugs to be reported for a smaller, legal payoff.
@@ -19,7 +19,7 @@ Note on mitigation: Collar works with top security firms in the space to ensure 
 
 **Illiquidity Risk**
 
-- Users, when repaying loans, must consider the liquidity of the market they are repaying into. If the Uni v3 pool is illiquid, slippage could eat up a large portion of repayed funds, leading to poor execution.
+- Users, when repaying loans, must consider the liquidity of the market they are repaying into. If the Uni v3 pool is illiquid, slippage could eat up a large portion of repaid funds, leading to poor execution.
 
 #### Key Limitations of Collar
 

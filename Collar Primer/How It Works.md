@@ -3,7 +3,7 @@
 order: 11000
 ---
 
-Collar hedges collateral upfront instead of waiting for the price to drop.
+Collar hedges collateral upfront instead of waiting for the price to drop. This allows borrowers to be shielded from any liquidation risk for months at a time.
 
 Collar's Offchain Intent Platform helps borrowers and marketmakers communicate with one another in order to arrive at acceptable terms. Once this is achieved, marketmakers create an onchain offer and the borrower accepts, with each party posting collateral only when necessary.
 

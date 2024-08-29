@@ -26,7 +26,7 @@ Let's name our most competitive and active marketmaker "Jane Sigma Research" or 
 
 1. ABC Cap agrees to move forward, notifying JSR via the Collar Frontend and Offchain Intent Platform, that they have been selected as the winner.
 
-2. JSR prepares an onchain Offer reflecting the terms ABC Cap initially requested, containing 20,000 USDC, reflecting the collateral requirements of the Collar Protocol of $110% - 100% = 10% * 100 wstETH * 2000 USDC per wstETH = 20,000 USDC$, the best case returns for the user. This reflects JSR's willingness to facilitate the trade.
+2. JSR prepares an onchain Offer reflecting the terms ABC Cap initially requested, containing 20,000 USDC, reflecting the collateral requirements of the Collar Protocol of 110% - 100% = 10% \* 100 wstETH \* 2000 USDC per wstETH = 20,000 USDC, the best case returns for the user. This reflects JSR's willingness to facilitate the trade.
 
 3. ABC Cap then accepts the Offer, completing the trade, depositing wstETH to the protocol.
 

@@ -35,4 +35,4 @@ You know those big "liquidation cascades" when everyone's getting margin called?
 
 ### The Inflation Tailwind
 
-One last thing... what happens if you borrow a million dollars and the money supply doubles? You owe LESS! Sure it's the same number of dollars, but hey, dollars are cheaper now. In an inflationary world, [debt is the META](https://moneywithkatie.com/blog/why-higher-inflation-might-mean-you-shouldnt-pay-off-your-low-interest-debt-early) (most effective tactics available)
+One last thing... what happens if you borrow a million dollars and the money supply doubles? You owe LESS! Sure it's the same number of dollars, but hey, dollars are cheaper now. In an inflationary world, [debt is the META](https://moneywithkatie.com/blog/why-higher-inflation-might-mean-you-shouldnt-pay-off-your-low-interest-debt-early) (most effective tactics available).
