@@ -17,10 +17,10 @@ Upon client execution, Collar immediately swaps the asset for USDC via a decentr
 
 Over the life of the trade, if the price of the underlying asset increases, the client will likely want to "roll" the trade higher. To do this, they can accept an extension offer from a marketmaker.
 
-At maturity, any party (marketmakers, clients, keepers, etc.) can mature a Collar vault by calling the "mature" function. Once this is called, funds are paid out to the marketmaker and user in line with the final price of the asset (as determined by Uniswap v3's TWAP) in line with whatever terms were agreed with upfront via the peer-to-pool execution mechanism
+At maturity, any party (marketmakers, clients, keepers, etc.) can mature a Collar vault by calling the "mature" function. Once this is called, funds are paid out to the marketmaker and user in line with the final price of the asset (as determined by Uniswap v3's TWAP) in line with whatever terms were agreed with upfront via the peer-to-pool execution mechanism.
 
 Collar, unlike many other DeFi protocols, does not rely on unsustainable incentives to achieve user or marketmaker adoption and instead relies on marketmakers acting in their self-interest.
 
 For now, marketmaking is permissionless onchain and access to the Offchain Intent Platform is whitelisted. This will be decentralized over time. This whitelist currently contains three Founding Marketmakers, similar to [Arbitrum Nova's Data Availability Committee](https://docs.arbitrum.foundation/concepts/security-council).
 
-If you're interested in becoming a marketmaker for the Offchain Intent Platform, you can submit an inquiry to hello@collarnetworks.com . Requirements include full API pricing of crypto-linked options.
+If you're interested in becoming a marketmaker for the Offchain Intent Platform, you can submit an inquiry to operations@collarnetworks.com . Requirements include full API pricing of crypto-linked options.

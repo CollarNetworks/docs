@@ -36,7 +36,7 @@ Because Collars are volatile bets and providers can monetize this volatility. Th
 
 #### How do I know I’m getting the best price?
 
-Collar allows for open competition between providers onchain to provide the best offer. With every Collar request via the hosted frontend, users are shown at least three quotes before they can execute in order to promote best execution.
+Collar allows for open competition between providers onchain to provide the best offer. With every Collar request via the hosted frontend, users are shown competitive quotes before they can execute in order to promote best execution.
 
 #### How big is this “spread”?
 
@@ -72,7 +72,7 @@ Other protocols liquidate your collateral at the worst possible time. Collar cre
 
 #### Does swapping create a taxable event?
 
-Protocols can’t give tax advice, but this is an issue that is solved by a feature called “supplier mode”, which introduces suppliers to Collar. By escrowing user collateral day one and charging users interest, Collars may allow capital gains to be deferred in some jurisdictions. Speak to your tax professional for more information
+Protocols can’t give tax advice, but this is an issue that is solved by a feature called “supplier mode”, which introduces suppliers to Collar. By escrowing user collateral day one and charging users interest, Collars may allow capital gains to be deferred in some jurisdictions. Speak to your tax professional for more information.
 
 #### When will supplier mode be live?
 
