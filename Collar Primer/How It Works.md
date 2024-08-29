@@ -9,6 +9,16 @@ Collar's Offchain Intent Platform helps borrowers and marketmakers communicate w
 
 We call this "just-in-time liquidity provision".
 
+Below, we’ve put together a simple diagram, video, and cashflow tracking spreadsheet which explains in detail how Collar works.
+
+[Cashflow Tracking Sheet](https://docs.google.com/spreadsheets/d/1lqiA0cenlmkuer_e1YZHTPq0dOYr5d7rGd3WFy3ix1w/edit?usp=sharing)
+
+Video (under construction)
+
+Flow of Funds Diagram
+
+![](/static/collarintentflow.png)
+
 ### Coordination Phase - Offchain
 
 First, borrowers request quotes for a cap (maximum return) from whitelisted marketmakers (solvers) via the Offchain Intent Platform. Once marketmakers show pricing, borrowers accept the best quote or reject the quotes and try another trade. Borrowers can also accept existing Offers "off the shelf" from marketmakers, creating a more one-click experience.
@@ -37,7 +47,7 @@ The Collar Team is also developing "auto-roll" functionality in order to make it
 
 Since Collar positions are tracked as NFTs that are tradeable by the user and the marketmaker, the marketmaker can purchase the borrower's half of the position and retire the NFTs early in order to close out and reclaim the locked collateral inside. This allows for "novations" which remove an inactive marketmaker as well as "unwinds" which allow a user to exit a trade early for some price.
 
-Once the blockchain's native timestamp exceeds the vault's maturity timestamp, the Position is able to be matured. Borrowers can wait to repay their loan, but they are fully exposed to any changes in price of the asset (i.e. if the asset appreciates after maturity and the borrower has not repaid their loan, they miss out on gains). This grace period is limited and changeable at the configuration level of the protocol.
+Once the blockchain's native timestamp exceeds the vault's maturity timestamp, the Position is able to be matured. Borrowers can wait to repay their loan, but they are fully exposed to any changes in price of the asset (i.e. if the asset appreciates after maturity and the borrower has not repaid their loan, they miss out on gains). This grace period is limited to 5 days, changeable at the configuration level of the protocol.
 
 Upon being matured, Position collateral is divided between the marketmaker and borrower based on the final price of the asset, which is obtained via a Uniswap TWAP oracle, and the terms of the trade agreed upon upfront. Any liability token awarded to the borrower is combined with the borrower's repaid tokens and sent to Uniswap v3 to repurchase the user's original collateral, which is then returned to them, closing out the trade.
 

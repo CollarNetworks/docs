@@ -22,9 +22,10 @@ Collar is not available in all jurisdictions or to all prospective borrowers. Us
 
 Below, we’ve put together a simple diagram, video, and cashflow tracking spreadsheet which explains in detail how Collar works.
 
-Diagram (under construction)
-![](/static/collarlogo.png)
+[Cashflow Tracking Sheet](https://docs.google.com/spreadsheets/d/1lqiA0cenlmkuer_e1YZHTPq0dOYr5d7rGd3WFy3ix1w/edit?usp=sharing)
 
 Video (under construction)
 
-[Cashflow Tracking Sheet](https://docs.google.com/spreadsheets/d/1lqiA0cenlmkuer_e1YZHTPq0dOYr5d7rGd3WFy3ix1w/edit?usp=sharing)
+Flow of Funds Diagram
+
+![](/static/collarintentflow.png)
