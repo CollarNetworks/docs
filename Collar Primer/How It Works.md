@@ -49,6 +49,8 @@ Since Collar positions are tracked as NFTs that are tradeable by the user and th
 
 Once the blockchain's native timestamp exceeds the vault's maturity timestamp, the Position is able to be matured. Borrowers can wait to repay their loan, but they are fully exposed to any changes in price of the asset (i.e. if the asset appreciates after maturity and the borrower has not repaid their loan, they miss out on gains). This grace period is limited to 5 days, changeable at the configuration level of the protocol.
 
+Loan repayment is handled by the keeper, which is maintained by the Offchain Intent Platform prior to full decentralization. Users are encouraged to authorize a sufficient amount of the liability asset upfront (i.e. USDC) so the keeper can initiate repayment on their behalf. If this approval is not in place, a default would occur even if the user has sufficient USDC in their wallet to repay. Users can specify this "autopay" functionality.
+
 Upon being matured, Position collateral is divided between the marketmaker and borrower based on the final price of the asset, which is obtained via a Uniswap TWAP oracle, and the terms of the trade agreed upon upfront. Any liability token awarded to the borrower is combined with the borrower's repaid tokens and sent to Uniswap v3 to repurchase the user's original collateral, which is then returned to them, closing out the trade.
 
 !!!
