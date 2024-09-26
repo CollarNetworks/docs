@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.778260043148">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.780691196970">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.5.0">
+    <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
     <title>How It Works</title>
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.778260043148" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.780691196970" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.778260043148" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.778260043148" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.780691196970" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.780691196970" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -213,6 +213,7 @@
 <p>The Collar Team is also developing &quot;auto-roll&quot; functionality in order to make it extremely easy for users to roll as assets are increasing in value.</p>
 <p>Since Collar positions are tracked as NFTs that are tradeable by the user and the marketmaker, the marketmaker can purchase the borrower&#x27;s half of the position and retire the NFTs early in order to close out and reclaim the locked collateral inside. This allows for &quot;novations&quot; which remove an inactive marketmaker as well as &quot;unwinds&quot; which allow a user to exit a trade early for some price.</p>
 <p>Once the blockchain&#x27;s native timestamp exceeds the vault&#x27;s maturity timestamp, the Position is able to be matured. Borrowers can wait to repay their loan, but they are fully exposed to any changes in price of the asset (i.e. if the asset appreciates after maturity and the borrower has not repaid their loan, they miss out on gains). This grace period is limited to 5 days, changeable at the configuration level of the protocol.</p>
+<p>Loan repayment is handled by the keeper, which is maintained by the Offchain Intent Platform prior to full decentralization. Users are encouraged to authorize a sufficient amount of the liability asset upfront (i.e. USDC) so the keeper can initiate repayment on their behalf. If this approval is not in place, a default would occur even if the user has sufficient USDC in their wallet to repay. Users can specify this &quot;autopay&quot; functionality.</p>
 <p>Upon being matured, Position collateral is divided between the marketmaker and borrower based on the final price of the asset, which is obtained via a Uniswap TWAP oracle, and the terms of the trade agreed upon upfront. Any liability token awarded to the borrower is combined with the borrower&#x27;s repaid tokens and sent to Uniswap v3 to repurchase the user&#x27;s original collateral, which is then returned to them, closing out the trade.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
