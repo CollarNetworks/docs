@@ -22,7 +22,7 @@ One of their portfolio managers heard about Collar at a conference and decides t
 
 Let's name our most competitive and active marketmaker "Jane Sigma Research" or JSR. JSR is hooked up via API to the Offchain Intent Platform and streams prices constantly, providing a phenomenally fast user experience.
 
-0. ABC Cap selects the terms they'd like (see above) and clicks request quote. Within seconds, they get back three potential return caps, or "quotes": 108%, 109%, and JSR's price 110%. These quotes came from marketmakers who quickly communicated their preferences via the Offchain Intent Platform.
+0. ABC Cap selects the terms they'd like (see above) and clicks request quote. Within seconds, they get back three potential return caps, or "quotes": 108%, 109%, and JSR's price 110%. These quotes came from solvers who quickly communicated their preferences via the Offchain Intent Platform.
 
 1. ABC Cap agrees to move forward, notifying JSR via the Collar Frontend and Offchain Intent Platform, that they have been selected as the winner.
 
@@ -32,10 +32,10 @@ Let's name our most competitive and active marketmaker "Jane Sigma Research" or 
 
 4. The protocol then swaps the supplied wstETH in a decentralized exchange, such as Uniswap v3, for USDC (note: this incurs some slippage). The price at which this swap executes determines the exact maximum and minimum of the vault (i.e. swapping 1 wstETH -> 1999 USDC (0.05% slippage) results in a ceiling of 2198.9 USDC and a floor of 1799.1 USDC).
 
-5. Of the 1999 USDC of proceeds from this swapped wstETH, 1799.1 is sent to the borrower as the Loan Balance, and 199.9 is deposited into a vault in case the collateral declines in value, incentivizing marketmakers in a downside scenario. This vault cannot be accessed by anyone until the maturity timestamp is greater than that of block.timestamp (a measurement native to the blockchain).
+5. Of the 1999 USDC of proceeds from this swapped wstETH, 1799.1 is sent to the borrower as the Loan Balance, and 199.9 is deposited into a vault in case the collateral declines in value, incentivizing solvers in a downside scenario. This vault cannot be accessed by anyone until the maturity timestamp is greater than that of block.timestamp (a measurement native to the blockchain).
 
 !!! Expert Note
-JSR understands hedging Collars is a bearish trade, so once the trade is executed they go to their favorite source of liquidity and get long wstETH to isolate the volatility risk from the directional risk produced by the trade. This is called "scalping gamma" and it's how marketmakers can make money by isolating and trading volatility itself.
+JSR understands hedging Collars is a bearish trade, so once the trade is executed they go to their favorite source of liquidity and get long wstETH to isolate the volatility risk from the directional risk produced by the trade. This is called "scalping gamma" and it's how solvers can make money by isolating and trading volatility itself.
 !!!
 
 ## wstETH Up 7% Scenario

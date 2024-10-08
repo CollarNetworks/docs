@@ -5,7 +5,7 @@ order: 11000
 
 Collar hedges collateral upfront instead of waiting for the price to drop. This allows borrowers to be shielded from any liquidation risk for months at a time.
 
-Collar's Offchain Intent Platform helps borrowers and marketmakers communicate with one another in order to arrive at acceptable terms. Once this is achieved, marketmakers create an onchain offer and the borrower accepts, with each party posting collateral only when necessary.
+Collar's Offchain Intent Platform helps borrowers and solvers communicate with one another in order to arrive at acceptable terms. Once this is achieved, solvers create an onchain offer and the borrower accepts, with each party posting collateral only when necessary.
 
 We call this "just-in-time liquidity provision".
 
@@ -21,7 +21,7 @@ Flow of Funds Diagram
 
 ### Coordination Phase - Offchain
 
-First, borrowers request quotes for a cap (maximum return) from whitelisted marketmakers (solvers) via the Offchain Intent Platform. Once marketmakers show pricing, borrowers accept the best quote or reject the quotes and try another trade. Borrowers can also accept existing Offers "off the shelf" from marketmakers, creating a more one-click experience.
+First, borrowers request quotes for a cap (maximum return) from whitelisted solvers via the Offchain Intent Platform. Once solvers show pricing, borrowers accept the best quote or reject the quotes and try another trade. Borrowers can also accept existing Offers "off the shelf" from solvers, creating a more one-click experience.
 
 The Offchain Intent Platform, similar to the sequencers of many top rollups like Arbitrum, Optimism, and more, will be progressively decentralized over time via Onchain Auctions and other mechanisms, the same way other DeFi protocols advanced in complexity, decentralization, and performance over time.
 
@@ -29,13 +29,13 @@ The Offchain Intent Platform, similar to the sequencers of many top rollups like
 
 If the user accepts, a marketmaker receives a notification and promptly creates an offer, posting the USDC or cash asset required to guarantee the user's upside exposure.
 
-Finally, the user accepts the Offer and provides their collateral. Once this transaction confirms onchain, the marketmaker now benefits from a decline in price. Marketmakers prefer to remain delta-neutral, so they would likely hedge this out using perps, onchain, or other offchain tools.
+Finally, the user accepts the Offer and provides their collateral. Once this transaction confirms onchain, the marketmaker now benefits from a decline in price. Solvers prefer to remain delta-neutral, so they would likely hedge this out using perps, onchain, or other offchain tools.
 
 !!!
 Note: In order to collar assets, borrowers must be willing to temporarily forego near-term upside exposure beyond a return cap specified by the liquidity provider, risking a small portion of the borrowed capital for the duration of the loan. For example, a user with 1 wstETH worth $1000 can borrow $900 for 3 months liquidation-free, but returns will be capped at $100 or a final wstETH price of $1100.
 !!!
 
-Upon acceptance by both parties, the protocol takes the user's collateral (stETH) and swaps it for the liability token (USDC) via [Uniswap v3](https://docs.uniswap.org/), removing price risk. The proceeds of the swap are then multiplied by the LTV percentage and sent to the user, with the remainder staying as collateral that can be won by the marketmaker. This incentivizes marketmakers to facilitate collars.
+Upon acceptance by both parties, the protocol takes the user's collateral (stETH) and swaps it for the liability token (USDC) via [Uniswap v3](https://docs.uniswap.org/), removing price risk. The proceeds of the swap are then multiplied by the LTV percentage and sent to the user, with the remainder staying as collateral that can be won by the marketmaker. This incentivizes solvers to facilitate collars.
 
 Collar allows for loan renegotiations or "rolls", where borrowers can "re-strike" higher. This is akin to a climber putting a new spike in the ice as they make progress. If they fall, they get caught by the higher spike.
 

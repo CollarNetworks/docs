@@ -80,4 +80,4 @@ This feature is on the roadmap with top priority and slated for later this year.
 
 #### Where do you get supply?
 
-From clients who want to earn yield
+From users who want to earn yield

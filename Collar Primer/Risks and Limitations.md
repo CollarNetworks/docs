@@ -27,9 +27,9 @@ Note on mitigation: Collar works with top security firms in the space to ensure 
 
 - This can be partially mitigated with rolls and even more so with "auto-roll", which remains under development
 
-**Savvy marketmakers to participate in the protocol actively**
+**Savvy solvers to participate in the protocol actively**
 
-- Where there is money to be made, marketmakers tend to participate.
+- Where there is money to be made, solvers tend to participate.
 
 **Lack of AMM liquidity**
 
@@ -41,11 +41,11 @@ Note on mitigation: Collar works with top security firms in the space to ensure 
 
 **Declined pricing for rolls in highly volatile times**
 
-- Marketmakers may not always provide roll pricing, which is a risk.
+- Solvers may not always provide roll pricing, which is a risk.
 
-**Lack of desire for marketmakers to quote the most volatile of tail assets**
+**Lack of desire for solvers to quote the most volatile of tail assets**
 
-- Marketmakers may not be willing to quote the latest dog, frog, or memecoin.
+- Solvers may not be willing to quote the latest dog, frog, or memecoin.
 
 **Market impact upon sale of assets into DEX**
 
