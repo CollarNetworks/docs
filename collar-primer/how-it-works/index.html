@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.780691196970">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.781707742882">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -33,11 +33,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.780691196970" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.781707742882" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.780691196970" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.781707742882" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.780691196970" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.781707742882" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -162,7 +162,7 @@
     </h1>
 </doc-anchor-target>
 <p>Collar hedges collateral upfront instead of waiting for the price to drop. This allows borrowers to be shielded from any liquidation risk for months at a time.</p>
-<p>Collar&#x27;s Offchain Intent Platform helps borrowers and marketmakers communicate with one another in order to arrive at acceptable terms. Once this is achieved, marketmakers create an onchain offer and the borrower accepts, with each party posting collateral only when necessary.</p>
+<p>Collar&#x27;s Offchain Intent Platform helps borrowers and solvers communicate with one another in order to arrive at acceptable terms. Once this is achieved, solvers create an onchain offer and the borrower accepts, with each party posting collateral only when necessary.</p>
 <p>We call this &quot;just-in-time liquidity provision&quot;.</p>
 <p>Below, we’ve put together a simple diagram, video, and cashflow tracking spreadsheet which explains in detail how Collar works.</p>
 <p><a href="https://docs.google.com/spreadsheets/d/1lqiA0cenlmkuer_e1YZHTPq0dOYr5d7rGd3WFy3ix1w/edit?usp=sharing">Cashflow Tracking Sheet</a></p>
@@ -179,7 +179,7 @@
         <span>Coordination Phase - Offchain</span>
     </h3>
 </doc-anchor-target>
-<p>First, borrowers request quotes for a cap (maximum return) from whitelisted marketmakers (solvers) via the Offchain Intent Platform. Once marketmakers show pricing, borrowers accept the best quote or reject the quotes and try another trade. Borrowers can also accept existing Offers &quot;off the shelf&quot; from marketmakers, creating a more one-click experience.</p>
+<p>First, borrowers request quotes for a cap (maximum return) from whitelisted solvers via the Offchain Intent Platform. Once solvers show pricing, borrowers accept the best quote or reject the quotes and try another trade. Borrowers can also accept existing Offers &quot;off the shelf&quot; from solvers, creating a more one-click experience.</p>
 <p>The Offchain Intent Platform, similar to the sequencers of many top rollups like Arbitrum, Optimism, and more, will be progressively decentralized over time via Onchain Auctions and other mechanisms, the same way other DeFi protocols advanced in complexity, decentralization, and performance over time.</p>
 <doc-anchor-target id="settlement-phase---onchain">
     <h3>
@@ -188,7 +188,7 @@
     </h3>
 </doc-anchor-target>
 <p>If the user accepts, a marketmaker receives a notification and promptly creates an offer, posting the USDC or cash asset required to guarantee the user&#x27;s upside exposure.</p>
-<p>Finally, the user accepts the Offer and provides their collateral. Once this transaction confirms onchain, the marketmaker now benefits from a decline in price. Marketmakers prefer to remain delta-neutral, so they would likely hedge this out using perps, onchain, or other offchain tools.</p>
+<p>Finally, the user accepts the Offer and provides their collateral. Once this transaction confirms onchain, the marketmaker now benefits from a decline in price. Solvers prefer to remain delta-neutral, so they would likely hedge this out using perps, onchain, or other offchain tools.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -206,7 +206,7 @@
         </div>
     </div>
 </div>
-<p>Upon acceptance by both parties, the protocol takes the user&#x27;s collateral (stETH) and swaps it for the liability token (USDC) via <a href="https://docs.uniswap.org/">Uniswap v3</a>, removing price risk. The proceeds of the swap are then multiplied by the LTV percentage and sent to the user, with the remainder staying as collateral that can be won by the marketmaker. This incentivizes marketmakers to facilitate collars.</p>
+<p>Upon acceptance by both parties, the protocol takes the user&#x27;s collateral (stETH) and swaps it for the liability token (USDC) via <a href="https://docs.uniswap.org/">Uniswap v3</a>, removing price risk. The proceeds of the swap are then multiplied by the LTV percentage and sent to the user, with the remainder staying as collateral that can be won by the marketmaker. This incentivizes solvers to facilitate collars.</p>
 <p>Collar allows for loan renegotiations or &quot;rolls&quot;, where borrowers can &quot;re-strike&quot; higher. This is akin to a climber putting a new spike in the ice as they make progress. If they fall, they get caught by the higher spike.</p>
 <p>Over the life of the trade, borrowers are offered terms to extend or &quot;roll&quot; their loan, extending the maturity and updating the floor and cap in line with the market. This coordination is facilitated via the Offchain Intent Platform.</p>
 <p>If a roll offer is accepted, the loan is extended, and the floor and cap are updated. Depending on the performance of the asset, the user either posts or receives collateral in order to extend.</p>

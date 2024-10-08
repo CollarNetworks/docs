@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.780691196970">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.781707742882">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Marketmaking</title>
     <meta name="title" content="Marketmaking">
-    <meta name="description" content="Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale...">
+    <meta name="description" content="Solvers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale of...">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.collarprotocol.xyz/collar-primer/marketmaking/">
@@ -20,22 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.collarprotocol.xyz/collar-primer/marketmaking/">
     <meta property="og:title" content="Marketmaking">
-    <meta property="og:description" content="Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale...">
+    <meta property="og:description" content="Solvers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale of...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.collarprotocol.xyz/collar-primer/marketmaking/">
     <meta property="twitter:title" content="Marketmaking">
-    <meta property="twitter:description" content="Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale...">
+    <meta property="twitter:description" content="Solvers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale of...">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.780691196970" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.781707742882" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.780691196970" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.781707742882" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.780691196970" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.781707742882" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -159,21 +159,21 @@
         <span>Marketmaking</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="marketmakers-quote-prices-offchain-and-provide-liquidity-onchain">
+<doc-anchor-target id="solvers-quote-prices-offchain-and-provide-liquidity-onchain">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#marketmakers-quote-prices-offchain-and-provide-liquidity-onchain">#</doc-anchor-trigger>
-        <span>Marketmakers quote prices offchain and provide liquidity onchain</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#solvers-quote-prices-offchain-and-provide-liquidity-onchain">#</doc-anchor-trigger>
+        <span>Solvers quote prices offchain and provide liquidity onchain</span>
     </h4>
 </doc-anchor-target>
-<p>Marketmakers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale of the asset. If the marketmaker successfully hedges their delta over the life of the trade and the realized volatility of the trade over its life comes in higher than the implied price they bought it for, the marketmaker should profit.</p>
+<p>Solvers are essentially offering a payout financially equivalent to a call spread to the borrower to replace exposure lost from the upfront sale of the asset. If the marketmaker successfully hedges their delta over the life of the trade and the realized volatility of the trade over its life comes in higher than the implied price they bought it for, the marketmaker should profit.</p>
 <p>Link here explaining this <a href="https://www.schwab.com/learn/story/gamma-scalping-primer">&quot;gamma scalping&quot;</a> mechanism.</p>
-<p>By agreeing to hedge a Collar, marketmakers are expected to deposit sufficient USDC to ensure that the client will get fully paid out in the best case scenario (appreciation of the underlier to the ceiling).</p>
-<p>Hedging this trade is inherently bearish because marketmakers make the most when the asset falls in value. As such, they naturally would want to go long the underlying asset in response to a completed trade (i.e. hedging your delta). There is also volatility exposure for a fixed period of time, at a specific strike, which is a bit harder to hedge.</p>
+<p>By agreeing to hedge a Collar, solvers are expected to deposit sufficient USDC to ensure that the client will get fully paid out in the best case scenario (appreciation of the underlier to the ceiling).</p>
+<p>Hedging this trade is inherently bearish because solvers make the most when the asset falls in value. As such, they naturally would want to go long the underlying asset in response to a completed trade (i.e. hedging your delta). There is also volatility exposure for a fixed period of time, at a specific strike, which is a bit harder to hedge.</p>
 <p>Upon client execution, Collar immediately swaps the asset for USDC via a decentralized exchange such as Uniswap, pays out the loan to the user, then holds the remaining client collateral in escrow until maturity alongside the marketmaker&#x27;s collateral.</p>
 <p>Over the life of the trade, if the price of the underlying asset increases, the client will likely want to &quot;roll&quot; the trade higher. To do this, they can accept an extension offer from a marketmaker.</p>
-<p>At maturity, any party (marketmakers, clients, keepers, etc.) can mature a Collar vault by calling the &quot;mature&quot; function. Once this is called, funds are paid out to the marketmaker and user in line with the final price of the asset (as determined by Uniswap v3&#x27;s TWAP) in line with whatever terms were agreed with upfront via the peer-to-pool execution mechanism.</p>
-<p>Collar, unlike many other DeFi protocols, does not rely on unsustainable incentives to achieve user or marketmaker adoption and instead relies on marketmakers acting in their self-interest.</p>
-<p>For now, marketmaking is permissionless onchain and access to the Offchain Intent Platform is whitelisted. This will be decentralized over time. This whitelist currently contains three Founding Marketmakers, similar to <a href="https://docs.arbitrum.foundation/concepts/security-council">Arbitrum Nova&#x27;s Data Availability Committee</a>.</p>
+<p>At maturity, any party (solvers, users, keepers, etc.) can mature a Collar vault by calling the &quot;mature&quot; function. Once this is called, funds are paid out to the marketmaker and user in line with the final price of the asset (as determined by Uniswap v3&#x27;s TWAP) in line with whatever terms were agreed with upfront via the peer-to-pool execution mechanism.</p>
+<p>Collar, unlike many other DeFi protocols, does not rely on unsustainable incentives to achieve user or marketmaker adoption and instead relies on solvers acting in their self-interest.</p>
+<p>For now, marketmaking is permissionless onchain and access to the Offchain Intent Platform is whitelisted. This will be decentralized over time. This whitelist currently contains three Founding Solvers, similar to <a href="https://docs.arbitrum.foundation/concepts/security-council">Arbitrum Nova&#x27;s Data Availability Committee</a>.</p>
 <p>If you&#x27;re interested in becoming a marketmaker for the Offchain Intent Platform, you can submit an inquiry to <a href="mailto:operations@collarnetworks.com">operations@collarnetworks.com</a> . Requirements include full API pricing of crypto-linked options.</p>
 
                                 

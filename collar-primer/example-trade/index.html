@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.780691196970">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.781707742882">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -31,11 +31,11 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.780691196970" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.781707742882" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.780691196970" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.781707742882" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.780691196970" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.781707742882" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -175,7 +175,7 @@
 <p>One of their portfolio managers heard about Collar at a conference and decides to head on over to collarprotocol.xyz, click &quot;Enter App&quot; and connect their wallet. From then on, these are the steps they would take, and the corresponding action on the backend that occurs.</p>
 <p>Let&#x27;s name our most competitive and active marketmaker &quot;Jane Sigma Research&quot; or JSR. JSR is hooked up via API to the Offchain Intent Platform and streams prices constantly, providing a phenomenally fast user experience.</p>
 <ol start="0">
-<li><p>ABC Cap selects the terms they&#x27;d like (see above) and clicks request quote. Within seconds, they get back three potential return caps, or &quot;quotes&quot;: 108%, 109%, and JSR&#x27;s price 110%. These quotes came from marketmakers who quickly communicated their preferences via the Offchain Intent Platform.</p>
+<li><p>ABC Cap selects the terms they&#x27;d like (see above) and clicks request quote. Within seconds, they get back three potential return caps, or &quot;quotes&quot;: 108%, 109%, and JSR&#x27;s price 110%. These quotes came from solvers who quickly communicated their preferences via the Offchain Intent Platform.</p>
 </li>
 <li><p>ABC Cap agrees to move forward, notifying JSR via the Collar Frontend and Offchain Intent Platform, that they have been selected as the winner.</p>
 </li>
@@ -185,7 +185,7 @@
 </li>
 <li><p>The protocol then swaps the supplied wstETH in a decentralized exchange, such as Uniswap v3, for USDC (note: this incurs some slippage). The price at which this swap executes determines the exact maximum and minimum of the vault (i.e. swapping 1 wstETH -&gt; 1999 USDC (0.05% slippage) results in a ceiling of 2198.9 USDC and a floor of 1799.1 USDC).</p>
 </li>
-<li><p>Of the 1999 USDC of proceeds from this swapped wstETH, 1799.1 is sent to the borrower as the Loan Balance, and 199.9 is deposited into a vault in case the collateral declines in value, incentivizing marketmakers in a downside scenario. This vault cannot be accessed by anyone until the maturity timestamp is greater than that of block.timestamp (a measurement native to the blockchain).</p>
+<li><p>Of the 1999 USDC of proceeds from this swapped wstETH, 1799.1 is sent to the borrower as the Loan Balance, and 199.9 is deposited into a vault in case the collateral declines in value, incentivizing solvers in a downside scenario. This vault cannot be accessed by anyone until the maturity timestamp is greater than that of block.timestamp (a measurement native to the blockchain).</p>
 </li>
 </ol>
 <div class="flex mb-6">
@@ -202,7 +202,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Expert Note</h5>
-<p>JSR understands hedging Collars is a bearish trade, so once the trade is executed they go to their favorite source of liquidity and get long wstETH to isolate the volatility risk from the directional risk produced by the trade. This is called &quot;scalping gamma&quot; and it&#x27;s how marketmakers can make money by isolating and trading volatility itself.</p>
+<p>JSR understands hedging Collars is a bearish trade, so once the trade is executed they go to their favorite source of liquidity and get long wstETH to isolate the volatility risk from the directional risk produced by the trade. This is called &quot;scalping gamma&quot; and it&#x27;s how solvers can make money by isolating and trading volatility itself.</p>
         </div>
     </div>
 </div>
