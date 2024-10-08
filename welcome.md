@@ -8,11 +8,11 @@ title: Introduction
 
 Collar is the best way to borrow against crypto.
 
-Collar is completely non-custodial and does not rely on liquidations to remain solvent. Collar offers the highest LTVs in DeFi without introducing credit or counterparty risk. Collar is powered by marketmakers instead of liquidators as well as other DeFi primitives like Uniswap v3.
+Collar is completely non-custodial and does not rely on liquidations to remain solvent. Collar offers the highest LTVs in DeFi without introducing credit or counterparty risk. Collar is powered by solvers instead of liquidators as well as other DeFi primitives like Uniswap v3.
 
 Collar is short for “COLlaborative Lending ARrangement” (Collar). It also happens to match the name of an options strategy with a similar payout profile.
 
-Collars are agreed upon offchain and settled onchain. For those of you Collar OG's, the new architecture is intent-based, relying on offchain, whitelisted solvers (i.e. marketmakers) to ensure users receive prompt, competitive pricing on proposed Collars. This is called the Offchain Intent Platform throughout these docs.
+Collars are agreed upon offchain and settled onchain. For those of you Collar OG's, the new architecture is intent-based, relying on offchain, whitelisted solvers to ensure users receive prompt, competitive pricing on proposed Collars. This is called the Offchain Intent Platform throughout these docs.
 
 This documentation explains how Collar works and answers questions prospective borrowers may have. Borrowers can access Collar Protocol via the smart contracts directly or via the Collar Frontend, hosted at https://app.collarprotocol.xyz, launching later this year.
 

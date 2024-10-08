@@ -5,7 +5,7 @@ order: 100
 
 #### Collar is...
 
-- **Liquidation-Free** - Since the protocol swaps the asset upfront, directional risk is removed. But what if the price goes up? This is mitigated by the return cap + the marketmakers guaranteeing performance on the upside to the ceiling in exchange for the chance to make money if the asset price declines.
+- **Liquidation-Free** - Since the protocol swaps the asset upfront, directional risk is removed. But what if the price goes up? This is mitigated by the return cap + the solvers guaranteeing performance on the upside to the ceiling in exchange for the chance to make money if the asset price declines.
 - **Tax-Advantaged** - Borrowing can be a better way to sell in most tax regimes, allowing borrowers to withdraw wealth while deferring tax obligations. _Note: in some jurisdictions, this will require a feature under development called supplier mode, which is under development._
 - **Non-Custodial** - Both parties could abandon Collar and would still receive their payoff at maturity, since anyone can mature a position onchain.
 - **Liquidity-Independent** - Collar does not require unsustainable yield farming in order to function.

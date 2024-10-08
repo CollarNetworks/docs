@@ -8,7 +8,7 @@ Planned:
 | Milestone                        | Estimated Ship Date | Network                                 | Primary Benefit                                                                                 |
 | :------------------------------- | :------------------ | :-------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Public Beta                      | Q3 '24              | Arbitrum Sepolia                        | Obtain user feedback                                                                            |
-| Integrate Founding Marketmakers  | Q3 '24              | Offchain Intent Platform                | Show users accurate, tradeable prices users                                                     |
+| Integrate Founding Solvers       | Q3 '24              | Offchain Intent Platform                | Show users accurate, tradeable prices users                                                     |
 | Supplier Mode                    | Q3 '24              | n/a                                     | Optimizes tax profile of loans + maintains governance rights                                    |
 | Protocol Audit                   | Q4 '24              | n/a                                     | Ensure security of Collar Protocol                                                              |
 | Global Launch                    | Q4 '24              | [Arbitrum](https://arbitrum.foundation) | Mitigate liquidations for the majority of DeFi users globally                                   |
@@ -31,5 +31,5 @@ Completed:
 | MVP          | Q1 '23          | RFQ-based MVP on Arbitrum mainnet                                                                          |
 | LaunchList   | Q2 '23          | First 100 users sign up to try Collar                                                                      |
 | Alpha Launch | Q3 '23          | Collar launched on Omni testnet - 178k wallets interacted                                                  |
-| _BUIDLing_   | Q4/Q1 '24       | ...                                                                                                        |
+| Building     | Q4/Q1 '24       | ...                                                                                                        |
 | Private Beta | Q2 '24          | Collar launches Peer-to-Pool beta on private testnet - $286m in committed notional from beta users         |

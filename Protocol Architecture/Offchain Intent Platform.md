@@ -8,9 +8,9 @@ In order to bootstrap liquidity, usage, and offers for the Collar Protocol, the 
 The Offchain Intent Platform consists of:
 
 1. A database of all requested Collar quotes
-2. A server, which handles quote requests by interacting with marketmakers' own quoting APIs
+2. A server, which handles quote requests by interacting with solvers' own quoting APIs
 3. The server also helps schedule and run cron jobs, which ensure on-time maturation of Collar's onchain
 
 This intent platform will be decentralized over time.
 
-Collar's Founding Marketmakers will be announced later this year.
+Collar's Founding Solvers will be announced later this year.
