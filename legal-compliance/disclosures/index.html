@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Risks and Limitations</title>
-    <meta name="title" content="Risks and Limitations">
-    <meta name="description" content="Hack Risk">
+    <title>Disclosures</title>
+    <meta name="title" content="Disclosures">
+    <meta name="description" content="Equal Credit Opportunity Act (ECOA)">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.collarprotocol.xyz/collar-primer/risks-and-limitations/">
+    <link rel="canonical" href="https://docs.collarprotocol.xyz/legal-compliance/disclosures/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.collarprotocol.xyz/collar-primer/risks-and-limitations/">
-    <meta property="og:title" content="Risks and Limitations">
-    <meta property="og:description" content="Hack Risk">
+    <meta property="og:url" content="https://docs.collarprotocol.xyz/legal-compliance/disclosures/">
+    <meta property="og:title" content="Disclosures">
+    <meta property="og:description" content="Equal Credit Opportunity Act (ECOA)">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.collarprotocol.xyz/collar-primer/risks-and-limitations/">
-    <meta property="twitter:title" content="Risks and Limitations">
-    <meta property="twitter:description" content="Hack Risk">
+    <meta property="twitter:url" content="https://docs.collarprotocol.xyz/legal-compliance/disclosures/">
+    <meta property="twitter:title" content="Disclosures">
+    <meta property="twitter:description" content="Equal Credit Opportunity Act (ECOA)">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -153,81 +153,22 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="risks-and-limitations" class="break-words">
+<doc-anchor-target id="disclosures" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#risks-and-limitations">#</doc-anchor-trigger>
-        <span>Risks and Limitations</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#disclosures">#</doc-anchor-trigger>
+        <span>Disclosures</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="key-risks">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#key-risks">#</doc-anchor-trigger>
-        <span>Key Risks</span>
-    </h4>
+<doc-anchor-target id="united-states-borrowers">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#united-states-borrowers">#</doc-anchor-trigger>
+        <span>United States Borrowers</span>
+    </h2>
 </doc-anchor-target>
-<p><strong>Hack Risk</strong></p>
-<ul>
-<li>DeFi protocols have been hacked before and there is a large incentive to steal user assets from the protocol. Collar has been designed in such a way that minimizes hack surface area to, on average, around ~25% of TVT (Total Volume Traded), since users take the majority out as a loan day one.</li>
-</ul>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Note on mitigation: Collar works with top security firms in the space to ensure user funds are protected from hackers. Collar will also run a bug bounty program to disincentivize hacking and encourage bugs to be reported for a smaller, legal payoff.</p>
-        </div>
-    </div>
-</div>
-<p><strong>Layer 2 Risks</strong></p>
-<ul>
-<li>These include sequencer downtime, MEV, or any other bespoke risk to any layer 2 Collar is deployed on.</li>
-</ul>
-<p><strong>Illiquidity Risk</strong></p>
-<ul>
-<li>Users, when repaying loans, must consider the liquidity of the market they are repaying into. If the Uni v3 pool is illiquid, slippage could eat up a large portion of repaid funds, leading to poor execution.</li>
-</ul>
-<doc-anchor-target id="key-limitations-of-collar">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#key-limitations-of-collar">#</doc-anchor-trigger>
-        <span>Key Limitations of Collar</span>
-    </h4>
-</doc-anchor-target>
-<p><strong>Users must be comfortable temporarily limiting upside in order to protect downside</strong></p>
-<ul>
-<li>This can be partially mitigated with rolls and even more so with &quot;auto-roll&quot;, which remains under development</li>
-</ul>
-<p><strong>Savvy solvers to participate in the protocol actively</strong></p>
-<ul>
-<li>Where there is money to be made, solvers tend to participate.</li>
-</ul>
-<p><strong>Lack of AMM liquidity</strong></p>
-<ul>
-<li>This is rarely an issue, after all, if there&#x27;s no spot market, why even try to create products that are more complex.</li>
-</ul>
-<p><strong>Potential barriers to understanding and entry</strong></p>
-<ul>
-<li>Collar can be a lot for the average user to understand, which is why we&#x27;re committed to transparency and simplicity.</li>
-</ul>
-<p><strong>Declined pricing for rolls in highly volatile times</strong></p>
-<ul>
-<li>Solvers may not always provide roll pricing, which is a risk.</li>
-</ul>
-<p><strong>Lack of desire for solvers to quote the most volatile of tail assets</strong></p>
-<ul>
-<li>Solvers may not be willing to quote the latest dog, frog, or memecoin.</li>
-</ul>
-<p><strong>Market impact upon sale of assets into DEX</strong></p>
-<ul>
-<li>It&#x27;s arguably better to have the market absorb this sale in good times rather than bad, however market impact is largely unavoidable, as it&#x27;s inherently bearish to borrow against an asset.</li>
-</ul>
+<p>Equal Credit Opportunity Act (ECOA)</p>
+<p>As required by the ECOA, Collar Networks and its affiliates do not discriminate based on race, color, religion, national origin, sex, marital status, age, or any other prohibited basis because we do not reject any applicants, as all loans are fully secured. Reach out to <a href="mailto:support@collarnetworks.com">support@collarnetworks.com</a> if you have any questions in this regard.</p>
+<p>Notice for Active-Duty Servicemembers: SCRA Interest Rate Reduction</p>
+<p>Active-duty servicemembers may qualify for an interest rate cap of 6% on eligible pre-service loans, as provided under the Servicemembers Civil Relief Act (SCRA). To apply, please submit a written request along with proof of active-duty status (e.g., military orders) to <a href="mailto:support@collarnetworks.com">support@collarnetworks.com</a>. For questions, contact us at <a href="mailto:support@collarnetworks.com">support@collarnetworks.com</a>. Thank you for your service.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -237,20 +178,20 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/lifecycle/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../why-collar/resulting-trilemma/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Lifecycle</span>
+                                                <span class="block mt-1">Resulting Trilemma</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../collar-primer/marketmaking/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../legal-compliance/privacy-policy/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Marketmaking</span>
+                                                <span class="block mt-1">Privacy Policy</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -294,6 +235,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Risks and Limitations", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Disclosures", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
