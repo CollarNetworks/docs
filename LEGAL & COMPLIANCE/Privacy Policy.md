@@ -13,7 +13,7 @@ Welcome to the Collar Protocol ("Company," "we," "our," or "us"). We are committ
 
 We may collect the following types of information:
 
-Personal Information: Information that identifies you personally, such as your name, email address, phone number, and payment information.
+Personal Information: Information that identifies you personally, such as your first name, last name, email address, telegram username, X handle, and blockchain wallet address.
 Usage Data: Information about your interactions with our website and services, including IP address, browser type, and browsing behavior.
 Cookies and Tracking Technologies: We use cookies and similar technologies to track activity and enhance your experience. You can control cookie settings through your browser.
 
@@ -38,29 +38,35 @@ Business Transfers: In the event of a merger, acquisition, or sale of assets, yo
 
 5. Data Security
 
-We implement reasonable security measures to protect your information from unauthorized access, use, or disclosure. However, no method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee absolute security.
+We use encryption, access controls, and regular security assessments to safeguard your Non-Public Personal Information (NPI) from unauthorized access, use, or disclosure, following industry-standard security measures and GLBA’s Safeguards Rule.
 
-6. Your Rights and Choices
+6. GLBA Compliance
+
+We collect Non-Public Personal Information (NPI) under GLBA, which may include your first name, last name, email address, and blockchain wallet address.
+
+To protect your NPI, we implement industry-standard security measures, such as encryption, access controls, and regular security assessments, in line with GLBA’s Safeguards Rule. These measures help ensure your data is secure from unauthorized access, use, or disclosure.
+
+7. Your Rights and Choices
 
 You have the following rights regarding your personal information:
 
 Access and Correction: You can request access to or correction of your personal information.
-Opt-Out: You can opt-out of receiving promotional communications from us by following the unsubscribe instructions provided in those communications.
+Opt-Out: We may share your NPI with select third-party service providers to facilitate the operation of our services. In certain circumstances, you have the right to opt-out of information sharing with non-affiliated third parties. To request this, please contact us at support@collarnetworks.com .
 Deletion: You can request the deletion of your personal information, subject to certain legal requirements.
 
-7. Third-Party Links
+8. Third-Party Links
 
 Our website may contain links to third-party websites or services. We are not responsible for the privacy practices or content of these third parties. We encourage you to review their privacy policies before providing any personal information.
 
-8. Children's Privacy
+9. Children's Privacy
 
 Our services are not directed to individuals under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected such information, we will take steps to delete it.
 
-9. Changes to This Privacy Policy
+10. Changes to This Privacy Policy
 
 We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy on our website and updating the effective date. Your continued use of our services after any changes constitutes your acceptance of the updated policy.
 
-10. Contact Us
+11. Contact Us
 
 If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:
 
