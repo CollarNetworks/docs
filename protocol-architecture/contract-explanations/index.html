@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.783807803140">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.785891034795">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Contract Explanations</title>
     <meta name="title" content="Contract Explanations">
-    <meta name="description" content="Handles address tracking of contracts for the protocol. Also allows various key protocol parameters to be tweaked.">
+    <meta name="description" content="Central configuration hub that manages protocol permissions and parameters.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.collarprotocol.xyz/protocol-architecture/contract-explanations/">
@@ -20,22 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.collarprotocol.xyz/protocol-architecture/contract-explanations/">
     <meta property="og:title" content="Contract Explanations">
-    <meta property="og:description" content="Handles address tracking of contracts for the protocol. Also allows various key protocol parameters to be tweaked.">
+    <meta property="og:description" content="Central configuration hub that manages protocol permissions and parameters.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.collarprotocol.xyz/protocol-architecture/contract-explanations/">
     <meta property="twitter:title" content="Contract Explanations">
-    <meta property="twitter:description" content="Handles address tracking of contracts for the protocol. Also allows various key protocol parameters to be tweaked.">
+    <meta property="twitter:description" content="Central configuration hub that manages protocol permissions and parameters.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.783807803140" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.785891034795" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.783807803140" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.785891034795" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.783807803140" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.785891034795" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -159,73 +159,88 @@
         <span>Contract Explanations</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="core-protocol-contracts">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#core-protocol-contracts">#</doc-anchor-trigger>
+        <span>Core Protocol Contracts</span>
+    </h2>
+</doc-anchor-target>
 <doc-anchor-target id="confighubsol">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#confighubsol">#</doc-anchor-trigger>
         <span>ConfigHub.sol</span>
-    </h4>
+    </h3>
 </doc-anchor-target>
-<p>Handles address tracking of contracts for the protocol. Also allows various key protocol parameters to be tweaked.</p>
-<doc-anchor-target id="collartakernftsol">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#collartakernftsol">#</doc-anchor-trigger>
-        <span>CollarTakerNFT.sol</span>
-    </h4>
+<p>Central configuration hub that manages protocol permissions and parameters. Handles contract authorization, protocol fees, valid parameter ranges, and emergency pause functionality.</p>
+<doc-anchor-target id="collartakernftsol--collarprovidernftsol">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#collartakernftsol--collarprovidernftsol">#</doc-anchor-trigger>
+        <span>CollarTakerNFT.sol &amp; CollarProviderNFT.sol</span>
+    </h3>
 </doc-anchor-target>
-<p>Represents user positon, calculates final price of the trade, pairs with ProviderPositionNFT.sol to represent the entire Collar position. Holds user collateral.</p>
-<doc-anchor-target id="loanssol">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#loanssol">#</doc-anchor-trigger>
-        <span>Loans.sol</span>
-    </h4>
+<p>Form the foundation of the protocol&#x27;s collar positions:</p>
+<p><strong>CollarTakerNFT.sol</strong></p>
+<ul>
+<li>Manages the taker side of collar positions</li>
+<li>Handles position settlement using oracle prices</li>
+<li>Works with provider NFTs to create zero-sum paired positions</li>
+</ul>
+<p><strong>CollarProviderNFT.sol</strong></p>
+<ul>
+<li>Allows liquidity providers to create offers</li>
+<li>Manages provider positions and protocol fees</li>
+<li>Handles provider side position settlement by taker NFT, and provider withdrawals</li>
+</ul>
+<doc-anchor-target id="loansnftsol">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#loansnftsol">#</doc-anchor-trigger>
+        <span>LoansNFT.sol</span>
+    </h3>
 </doc-anchor-target>
-<p>This contract acts as the main entry point for borrowers in the Collar Protocol, and manages the creation and closure of collateralized loans via Collar positions.</p>
-<p><strong>How it Works</strong>:</p>
+<p>Primary entry point for borrowers, offering collateralized loans through collar positions:</p>
+<p><strong>Key Functions</strong>:</p>
 <ol>
-<li>Allows users to create loans by providing collateral and borrowing against it.</li>
-<li>Handles the swapping of collateral to the cash asset using Uniswap V3.</li>
-<li>Interacts with CollarTakerNFT to mint the NFT collar position backing the loans to the user.</li>
-<li>Manages loan closure, including repayment and swapping back to collateral.</li>
-<li>Provides keeper functionality for automated loan closure to allow avoiding price
-fluctuations negatively impacting swapping back to collateral.</li>
-<li>Allows rolling (extending) the loan via an owner and user approved Rolls contract.</li>
+<li>Opens loans by accepting collateral and providing borrowed funds</li>
+<li>Manages asset swaps through authorized Swapper contracts</li>
+<li>Handles loan closure and settlement</li>
+<li>Supports keeper-assisted operations for time sensitive operations</li>
+<li>Enables loan extensions through Rolls contracts</li>
+<li>Optionally supports escrow-backed loans</li>
 </ol>
+<doc-anchor-target id="escrowsuppliernftsol">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#escrowsuppliernftsol">#</doc-anchor-trigger>
+        <span>EscrowSupplierNFT.sol</span>
+    </h3>
+</doc-anchor-target>
+<p>Optional system for escrow-backed loans:</p>
+<ul>
+<li>Manages escrow positions with fixed interest rates</li>
+<li>Handles position lifecycle including late fees</li>
+<li>Provides tax-efficient loan structure</li>
+</ul>
 <doc-anchor-target id="rollssol">
-    <h4>
+    <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#rollssol">#</doc-anchor-trigger>
         <span>Rolls.sol</span>
-    </h4>
+    </h3>
 </doc-anchor-target>
-<p>Creates a new roll offer for an existing taker NFT position and pulls the provider NFT.</p>
-<p>The provider must own the ProviderPositionNFT for the position to be rolled.</p>
-<p>If the provider will need to provide cash on execution, they must approve the contract to pull that cash when submitting the offer (and have those funds available), so that it is executable. Offer may become unexecutable due to insufficient provider cash approval or balance.</p>
-<p>Rolls are executed by settling the existing paired position and creating a new one. This pulls and distributes cash, pulls taker NFT, and sends out new taker and provider NFTs. The caller must be the owner of the CollarTakerNFT for the position being rolled, and must have approved sufficient cash if cash needs to be paid (depends on offer and current price).</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">        The contract balance    = takerSettled + providerSettled
-
-        The contract receives / pays:
-            1. toPairedPosition =                                  newPutLocked + newCallLocked
-            2. toTaker          = takerSettled                   - newPutLocked                 - fee
-            3. toProvider       =                providerSettled                - newCallLocked + fee
-
-        All payments summed     = takerSettled + providerSettled
-
-        So the contract pays out everything it receives, and everyone gets their correct updates.</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="swapssol">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#swapssol">#</doc-anchor-trigger>
-        <span>Swaps.sol</span>
-    </h4>
+<p>Enables extension of existing positions at new prices:</p>
+<ul>
+<li>Allows providers to offer position rolls</li>
+<li>Manages settlement and new positions creation</li>
+<li>Handles associated fee calculations and transfers</li>
+</ul>
+<doc-anchor-target id="price--swaps">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#price--swaps">#</doc-anchor-trigger>
+        <span>Price &amp; Swaps</span>
+    </h3>
 </doc-anchor-target>
-<p>Handles any and all swaps for the protocol. Currently leverages Uniswap v3 exclusively. Over time may be expanded to include other liquidity sources.</p>
-<doc-anchor-target id="oracleuniv3twapsol">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#oracleuniv3twapsol">#</doc-anchor-trigger>
-        <span>OracleUniV3TWAP.sol</span>
-    </h4>
-</doc-anchor-target>
-<p>Calculates final price at maturity of the asset by observing a Uniswap v3 TWAP pool.</p>
+<p><strong>Oracles</strong>
+Multiple oracle options supporting different price feeds with built-in safety checks.</p>
+<p><strong>SwapperUniV3.sol</strong>
+Handles protocol swaps with slippage protection and balance verification.</p>
 
                                 
                                 <!-- Required only on API pages -->
