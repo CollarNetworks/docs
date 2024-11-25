@@ -1,55 +1,57 @@
 ---
-# icon: ":slightly_frowning_face:"
 order: 1000
 ---
 
-#### ConfigHub.sol
+## Core Protocol Contracts
 
-Handles address tracking of contracts for the protocol. Also allows various key protocol parameters to be tweaked.
+### ConfigHub.sol
 
-#### CollarTakerNFT.sol
+Central configuration hub that manages protocol permissions and parameters. Handles contract authorization, protocol fees, valid parameter ranges, and emergency pause functionality.
 
-Represents user positon, calculates final price of the trade, pairs with ProviderPositionNFT.sol to represent the entire Collar position. Holds user collateral.
+### CollarTakerNFT.sol & CollarProviderNFT.sol
 
-#### Loans.sol
+Form the foundation of the protocol's collar positions:
 
-This contract acts as the main entry point for borrowers in the Collar Protocol, and manages the creation and closure of collateralized loans via Collar positions.
+**CollarTakerNFT.sol**
+- Manages the taker side of collar positions
+- Handles position settlement using oracle prices
+- Works with provider NFTs to create zero-sum paired positions
 
-**How it Works**:
+**CollarProviderNFT.sol**
+- Allows liquidity providers to create offers
+- Manages provider positions and protocol fees
+- Handles provider side position settlement by taker NFT, and provider withdrawals
 
-1.  Allows users to create loans by providing collateral and borrowing against it.
-2.  Handles the swapping of collateral to the cash asset using Uniswap V3.
-3.  Interacts with CollarTakerNFT to mint the NFT collar position backing the loans to the user.
-4.  Manages loan closure, including repayment and swapping back to collateral.
-5.  Provides keeper functionality for automated loan closure to allow avoiding price
-    fluctuations negatively impacting swapping back to collateral.
-6.  Allows rolling (extending) the loan via an owner and user approved Rolls contract.
+### LoansNFT.sol
 
-#### Rolls.sol
+Primary entry point for borrowers, offering collateralized loans through collar positions:
 
-Creates a new roll offer for an existing taker NFT position and pulls the provider NFT.
+**Key Functions**:
+1. Opens loans by accepting collateral and providing borrowed funds
+2. Manages asset swaps through authorized Swapper contracts
+3. Handles loan closure and settlement
+4. Supports keeper-assisted operations for time sensitive operations
+5. Enables loan extensions through Rolls contracts
+6. Optionally supports escrow-backed loans
 
-The provider must own the ProviderPositionNFT for the position to be rolled.
+### EscrowSupplierNFT.sol
 
-If the provider will need to provide cash on execution, they must approve the contract to pull that cash when submitting the offer (and have those funds available), so that it is executable. Offer may become unexecutable due to insufficient provider cash approval or balance.
+Optional system for escrow-backed loans:
+- Manages escrow positions with fixed interest rates
+- Handles position lifecycle including late fees
+- Provides tax-efficient loan structure
 
-Rolls are executed by settling the existing paired position and creating a new one. This pulls and distributes cash, pulls taker NFT, and sends out new taker and provider NFTs. The caller must be the owner of the CollarTakerNFT for the position being rolled, and must have approved sufficient cash if cash needs to be paid (depends on offer and current price).
+### Rolls.sol
 
-            The contract balance    = takerSettled + providerSettled
+Enables extension of existing positions at new prices:
+- Allows providers to offer position rolls
+- Manages settlement and new positions creation
+- Handles associated fee calculations and transfers
 
-            The contract receives / pays:
-                1. toPairedPosition =                                  newPutLocked + newCallLocked
-                2. toTaker          = takerSettled                   - newPutLocked                 - fee
-                3. toProvider       =                providerSettled                - newCallLocked + fee
+### Price & Swaps
 
-            All payments summed     = takerSettled + providerSettled
+**Oracles**
+Multiple oracle options supporting different price feeds with built-in safety checks.
 
-            So the contract pays out everything it receives, and everyone gets their correct updates.
-
-#### Swaps.sol
-
-Handles any and all swaps for the protocol. Currently leverages Uniswap v3 exclusively. Over time may be expanded to include other liquidity sources.
-
-#### OracleUniV3TWAP.sol
-
-Calculates final price at maturity of the asset by observing a Uniswap v3 TWAP pool.
+**SwapperUniV3.sol**
+Handles protocol swaps with slippage protection and balance verification.
