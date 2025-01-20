@@ -27,6 +27,7 @@ To communicate with you, including for customer support and marketing purposes.
 To process transactions and manage your orders.
 To analyze usage and trends to enhance user experience and service quality.
 To comply with legal obligations and protect our rights and interests.
+To verify your identity under Anti Money Laundering and Counter Terrorist Financing statutes and agency guidance.
 
 4. How We Share Your Information
 
