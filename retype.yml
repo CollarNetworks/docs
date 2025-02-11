@@ -1,12 +1,14 @@
 input: .
 output: .retype
-url: https://docs.collarprotocol.xyz
+url: https://docs.votre.xyz
 branding:
   colors:
-    background: "#fcfc95"
-  logo: /static/collarlogo.png
-  logoDark: /static/collarlogodark.png
-  # title: "'"
+    label:
+      text: "#fff"
+      background: "#e5ba59"
+  logo: /static/votre.svg
+  logoDark: /static/votre_dark.svg
+  # title: "Votre"
   label: Docs
   logoAlign: left
 

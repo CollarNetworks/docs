@@ -1,0 +1,177 @@
+{
+  "version": "3.6.0",
+  "created": "2025-02-11T18:17:11Z",
+  "files": [
+    {
+      "path": ".nojekyll"
+    },
+    {
+      "path": "404.html"
+    },
+    {
+      "path": "CNAME"
+    },
+    {
+      "path": "economics/how-it-works/index.html"
+    },
+    {
+      "path": "economics/market-making/index.html"
+    },
+    {
+      "path": "economics/monetization/index.html"
+    },
+    {
+      "path": "economics/risks/index.html"
+    },
+    {
+      "path": "economics/swap-trade/index.html"
+    },
+    {
+      "path": "faq/index.html"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "legal/disclosures/index.html"
+    },
+    {
+      "path": "legal/eligibility/index.html"
+    },
+    {
+      "path": "legal/privacy-policy/index.html"
+    },
+    {
+      "path": "legal/terms-of-service/index.html"
+    },
+    {
+      "path": "loan/accept-callstrike/index.html"
+    },
+    {
+      "path": "loan/accept-supplier/index.html"
+    },
+    {
+      "path": "loan/authorize-onchain/index.html"
+    },
+    {
+      "path": "loan/login/index.html"
+    },
+    {
+      "path": "loan/manage-loans/index.html"
+    },
+    {
+      "path": "loan/request-quote/index.html"
+    },
+    {
+      "path": "loan/roll-loan/index.html"
+    },
+    {
+      "path": "protocol/architecture/index.html"
+    },
+    {
+      "path": "protocol/audits/index.html"
+    },
+    {
+      "path": "protocol/deployments/index.html"
+    },
+    {
+      "path": "protocol/roadmap/index.html"
+    },
+    {
+      "path": "protocol/why/attempted-solutions/index.html"
+    },
+    {
+      "path": "protocol/why/behavior-of-nations/index.html"
+    },
+    {
+      "path": "protocol/why/defi-problems-liquidations/index.html"
+    },
+    {
+      "path": "protocol/why/further-reading/index.html"
+    },
+    {
+      "path": "protocol/why/progress-with-defi/index.html"
+    },
+    {
+      "path": "protocol/why/resulting-trilemma/index.html"
+    },
+    {
+      "path": "protocol/why/what-to-do-about-it/index.html"
+    },
+    {
+      "path": "readme.txt"
+    },
+    {
+      "path": "resources/css/retype.css"
+    },
+    {
+      "path": "resources/fonts/Inter-italic-latin-var.woff2"
+    },
+    {
+      "path": "resources/fonts/Inter-roman-latin-var.woff2"
+    },
+    {
+      "path": "resources/js/config.js"
+    },
+    {
+      "path": "resources/js/lunr.js"
+    },
+    {
+      "path": "resources/js/mermaid.js"
+    },
+    {
+      "path": "resources/js/retype.js"
+    },
+    {
+      "path": "resources/js/search.json"
+    },
+    {
+      "path": "resources/lunr.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/mermaid.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/prism.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.LICENSE.txt"
+    },
+    {
+      "path": "robots.txt"
+    },
+    {
+      "path": "sitemap.xml.gz"
+    },
+    {
+      "path": "static/.ds_store"
+    },
+    {
+      "path": "static/collarintentflow.png"
+    },
+    {
+      "path": "static/collarlogo.png"
+    },
+    {
+      "path": "static/collarlogodark.png"
+    },
+    {
+      "path": "static/custom.css"
+    },
+    {
+      "path": "static/favicon.ico"
+    },
+    {
+      "path": "static/votre_dark.svg"
+    },
+    {
+      "path": "static/votre.svg"
+    },
+    {
+      "path": "todo.txt"
+    }
+  ]
+}
