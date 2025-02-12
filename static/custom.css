@@ -37,6 +37,6 @@
   width: 90px;
 }
 
-#docs-site-header .items-center:has(#docs-site-logo) {
+/* #docs-site-header .items-center:has(#docs-site-logo) {
   align-items: flex-end;
-}
+} */
