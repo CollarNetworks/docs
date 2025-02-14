@@ -1,5 +1,5 @@
 ---
-order: 110
+order: 140
 label: "Know Your Customer (KYC) Verification"
 ---
 
