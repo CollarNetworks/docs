@@ -3,6 +3,8 @@ order: 10
 label: "Login"
 ---
 
+# Logging in to Votre
+
 Welcome to Votre! Here's a quick guide to ensure a smooth and secure login experience.
 
 ### Web3 Wallet Access

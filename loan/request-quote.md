@@ -3,31 +3,32 @@ order: 9
 label: "Request Quote"
 ---
 
-### Requesting a Quote with Votre
+# Requesting a Quote with Votre
 
 Customize your personal loan experience by requesting a quote through Votre. This process is designed to be efficient and user-friendly, ensuring you receive competitive offers tailored to your needs.
 
 ### How It Works
 
-##### Submit Your Request
+=== 1. **Submit Your Request**
 
 Begin by filling out the necessary details for your loan request. This includes the loan amount, duration, and any specific terms you might have in mind.
 
-##### Supplier Network Engagement
+=== 2. **Supplier Network Engagement**
 
 Once submitted, Votre will publish your request to our curated network of suppliers. These suppliers will review your request and provide personalized offers in real-time.
 
-##### Offchain Management
+=== 3. **Offchain Management**
 
 To enhance speed and efficiency, the initial request and offer management occur offchain. This allows for rapid processing and negotiation without the delays associated with onchain transactions.
 
-##### Approval and Onchain Transition
+=== 4. **Approval and Onchain Transition**
 
 After reviewing the offers, you can approve the one that best suits your needs. Once approved, the transaction is moved onchain, where it is secured and managed through our robust protocol.
 
-##### Secure and Transparent
+=== 5. **Secure and Transparent**
 
 The onchain management ensures that your loan is handled with the highest level of security and transparency, leveraging blockchain technology to maintain integrity and trust.
+===
 
 ### Benefits
 

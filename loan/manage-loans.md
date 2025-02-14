@@ -5,26 +5,28 @@ label: "Manage Loans"
 
 <!-- ![Votre manage loans](/static/images/manage-loans.png) -->
 
-### Managing Your Loans with Votre
+# Managing Your Loans with Votre
 
 Once your loan is accepted and authorized onchain, Votre provides a robust loan management dashboard. This tool is designed to give you a comprehensive view of all your positions on the platform, ensuring you have the information you need to manage your loans effectively.
 
 ### Dashboard Features
 
-##### Comprehensive Loan Overview
+=== Comprehensive Loan Overview
 
 - Access a detailed view of all your active loans, including loan IDs, asset values, and projected outcomes.
 - Monitor the maturity of each loan to plan your financial strategies accordingly.
 
-##### Loan Details Page
+=== Loan Details Page
 
 - Dive deeper into individual loans to view specific details such as interest rates, payment schedules, and collateral requirements.
 - Track asset values and project outcomes to stay informed about your financial commitments.
 
-##### Roll Offers
+=== Roll Offers
 
 - Users can request and receive roll offers on their existing loans. This feature allows you to extend or modify the terms of your loan based on current market conditions.
 - For more details on how roll offers work, please refer to the [Roll Offer Documentation](/loan/roll-loan.md).
+
+===
 
 ### Benefits
 
