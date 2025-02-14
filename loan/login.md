@@ -17,8 +17,10 @@ Your login is protected with industry-standard encryption to ensure your data re
 
 To comply with local anti-money laundering regulations, we verify your identity through our KYC program. This is a necessary step to gain full access to our services. For detailed information on the KYC process, please refer to the [KYC Verification page](/legal/kyc).
 
-### Troubleshooting
-
-If you encounter any issues, double-check your credentials. For further assistance, our support team is ready to help.
-
 ![Votre login screen](/static/images/login.png)
+
+!!! Troublshooting
+
+For any questions or assistance, our support team is ready to help and answer any questions you may have. You can reach out to us on [discord](https://discord.gg/WBygxVrT).
+
+!!!
