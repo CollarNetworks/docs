@@ -17,7 +17,7 @@ links:
     link: https://votre.xyz
   - text: App
     link: https://app.votre.xyz
-  - text: Support
+  - text: Discord
     link: https://discord.gg/WBygxVrT
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."

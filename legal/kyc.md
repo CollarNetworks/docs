@@ -17,6 +17,8 @@ The KYC process is designed to ensure the authenticity of our users and to preve
 - **Selfie Verification**: Take a selfie to match against your ID document.
 - **Address Verification**: Provide your current address to verify your residency.
 
-### Troubleshooting
+!!! Troublshooting
 
-If you experience any issues during the KYC process, please contact our support team for assistance.
+For any questions or assistance, our support team is ready to help and answer any questions you may have. You can reach out to us on [discord](https://discord.gg/WBygxVrT).
+
+!!!
