@@ -19,7 +19,7 @@ Once submitted, Votre will publish your request to our curated network of suppli
 
 === 3. **Offchain Management**
 
-To enhance speed and efficiency, the initial request and offer management occur offchain. This allows for rapid processing and negotiation without the delays associated with onchain transactions.
+To optimize speed and efficiency, the initial request and offer management are handled offchain. This approach enables swift processing and negotiation, allowing for more flexible and dynamic interactions between borrowers and suppliers.
 
 === 4. **Approval and Onchain Transition**
 
@@ -27,8 +27,7 @@ After reviewing the offers, you can approve the one that best suits your needs. 
 
 === 5. **Secure and Transparent**
 
-The onchain management ensures that your loan is handled with the highest level of security and transparency, leveraging blockchain technology to maintain integrity and trust.
-===
+# The onchain management ensures that your loan is handled with the highest level of security and transparency, leveraging blockchain technology to maintain integrity and trust.
 
 ### Benefits
 
@@ -38,7 +37,7 @@ The onchain management ensures that your loan is handled with the highest level 
 
 ![Votre request quote](/static/images/request-quote.png)
 
-!!! Troublshooting
+!!! Troubleshooting
 
 For any questions or assistance, our support team is ready to help and answer any questions you may have. You can reach out to us on [discord](https://discord.gg/WBygxVrT).
 

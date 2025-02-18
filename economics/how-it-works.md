@@ -5,11 +5,11 @@ order: 11000
 
 Votre protects borrowers from liquidation risk by hedging collateral upfront rather than waiting for price drops. This ensures liquidation-free borrowing for months at a time.
 
-Votre’s Offchain Intent Platform enables borrowers and solvers to negotiate terms before executing onchain transactions, providing just-in-time liquidity provision.
+Votre’s Offchain Intent Platform enables borrowers and providers to negotiate terms before executing onchain transactions, providing just-in-time liquidity provision.
 
 ### Coordination Phase (Offchain)
 
-- Borrowers request quotes from whitelisted solvers for a return cap.
+- Borrowers request quotes from whitelisted providers for a return cap.
 - Solvers present pricing, and borrowers choose the best offer or select an existing one for a one-click experience.
 
 ```mermaid
@@ -28,9 +28,9 @@ flowchart TD
 
 ### Settlement Phase (Onchain)
 
-- Upon acceptance, a marketmaker posts collateral (USDC) to guarantee the borrower’s upside.
+- Upon acceptance, a provider posts collateral (USDC) to guarantee the borrower’s upside.
 - Borrowers then post their collateral, which is swapped via Uniswap v3 to remove price risk.
-- Borrowers receive a loan amount based on the loan-to-value (LTV) ratio, while the remaining collateral stays locked for settlement.
+- Borrowers receive a loan amount based on the loan-to-value (LTV) ratio, while the remaining asset stays locked for settlement.
 
 ```mermaid
 flowchart TD
@@ -96,4 +96,4 @@ flowchart TD
 
 - Supplier Mode: A new feature under development that could offer better tax treatment and avoid selling collateral. -->
 
-Votre’s unique approach ensures borrowers have liquidation-free loans while solvers efficiently hedge risk.
+Votre’s unique approach ensures borrowers have liquidation-free loans while providers efficiently hedge risk.

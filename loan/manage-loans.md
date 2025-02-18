@@ -32,11 +32,11 @@ Once your loan is accepted and authorized onchain, Votre provides a robust loan 
 
 - **Centralized Management**: Keep all your loan information in one place for easy access and management.
 - **Real-Time Updates**: Receive up-to-date information on your loans and any changes in asset values or market conditions.
-- **Flexible Loan Options**: Utilize roll offers to adjust your loan terms as needed, providing flexibility in your financial planning.
+- **Flexible Loan Options**: Utilize roll offers to extend your loan terms as needed, providing flexibility in your financial planning.
 
 ![Votre manage loan](/static/images/manage-loan.png)
 
-!!! Troublshooting
+!!! Troubleshooting
 
 For any questions or assistance, our support team is ready to help and answer any questions you may have. You can reach out to us on [discord](https://discord.gg/WBygxVrT).
 
