@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.785891034795">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.793836978252">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Deployments</title>
     <meta name="title" content="Deployments">
-    <meta name="description" content="collarprotocol.eth">
+    <meta name="description" content="Link">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://docs.collarprotocol.xyz/protocol-architecture/deployments/">
@@ -20,22 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.collarprotocol.xyz/protocol-architecture/deployments/">
     <meta property="og:title" content="Deployments">
-    <meta property="og:description" content="collarprotocol.eth">
+    <meta property="og:description" content="Link">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.collarprotocol.xyz/protocol-architecture/deployments/">
     <meta property="twitter:title" content="Deployments">
-    <meta property="twitter:description" content="collarprotocol.eth">
+    <meta property="twitter:description" content="Link">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.785891034795" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.793836978252" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.785891034795" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.793836978252" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.785891034795" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.793836978252" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -159,97 +159,198 @@
         <span>Deployments</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="official-wallet">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#official-wallet">#</doc-anchor-trigger>
-        <span>Official Wallet</span>
-    </h4>
+<doc-anchor-target id="base-mainnet">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-mainnet">#</doc-anchor-trigger>
+        <span>Base Mainnet</span>
+    </h3>
 </doc-anchor-target>
-<p><a href="https://etherscan.io/address/0x1980fB2f1e18E0CEc2219e3eda333b05fd92dA0d">collarprotocol.eth</a></p>
-<doc-anchor-target id="arbitrum-sepolia">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#arbitrum-sepolia">#</doc-anchor-trigger>
-        <span>Arbitrum Sepolia</span>
-    </h4>
-</doc-anchor-target>
-<p>Collar uses Arbitrum Sepolia to test contract functionality.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Address</th>
-<th style="text-align: left;">Description</th>
+<th>Link</th>
+<th>Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">ConfigHub.sol</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/0x91462BFD0510d6Ea9c375d6F02407e29f903254E"><strong>0x91462BFD0510d6Ea9c375d6F02407e29f903254E</strong></a></td>
-<td style="text-align: left;">Handles address tracking of contracts for the protocol</td>
+<td><a href="https://basescan.org/address/0x230158944a372dc8801dc112ac565f59579e6b4e">https://basescan.org/address/0x230158944a372dc8801dc112ac565f59579e6b4e</a></td>
+<td>ConfigHub</td>
 </tr>
 <tr>
-<td style="text-align: left;">CollarTakerNFT.sol</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/0xA7d432509C513B9347d1B7aB72494471a1A86655"><strong>0xA7d432509C513B9347d1B7aB72494471a1A86655</strong></a></td>
-<td style="text-align: left;">Calculates settlement value of Collar positions, represents user holdings</td>
+<td><a href="https://basescan.org/address/0x3c8907c85cfc509c5b28e2d48ecad5324f35e3c4">https://basescan.org/address/0x3c8907c85cfc509c5b28e2d48ecad5324f35e3c4</a></td>
+<td>ChainlinkOracle ETH/USD</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProviderPositionNFT.sol</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/0x960B52349ae2c97e52438F13F364aa8d145B5B5C"><strong>0x960B52349ae2c97e52438F13F364aa8d145B5B5C</strong></a></td>
-<td style="text-align: left;">Manages liquidity provision, represents marketmaker position.</td>
+<td><a href="https://basescan.org/address/0x059718aa8f06864c291859a150a35da135cbcebe">https://basescan.org/address/0x059718aa8f06864c291859a150a35da135cbcebe</a></td>
+<td>ChainlinkOracle USDC/USD</td>
 </tr>
 <tr>
-<td style="text-align: left;">Loans.sol</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/0x43bb63964A73e97292f018468Fcd0203a3d3A8b7"><strong>0x43bb63964A73e97292f018468Fcd0203a3d3A8b7</strong></a></td>
-<td style="text-align: left;">Entry point to protocol, handles loans</td>
+<td><a href="https://basescan.org/address/0x3d9453035f345f10de7bbaacf209af03fb253960">https://basescan.org/address/0x3d9453035f345f10de7bbaacf209af03fb253960</a></td>
+<td>ChainlinkOracle cbBTC/USD</td>
 </tr>
 <tr>
-<td style="text-align: left;">Swaps.sol</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/pending"><strong>pending</strong></a></td>
-<td style="text-align: left;">Handles swaps of collateral</td>
+<td><a href="https://basescan.org/address/0x6e084fef7bbcd123ed1932c2e89d8aba7bb74be4">https://basescan.org/address/0x6e084fef7bbcd123ed1932c2e89d8aba7bb74be4</a></td>
+<td>CombinedOracle WETH/USDC</td>
 </tr>
 <tr>
-<td style="text-align: left;">Rolls.sol</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/pending"><strong>pending</strong></a></td>
-<td style="text-align: left;">Handles the extension of Collar Positions</td>
+<td><a href="https://basescan.org/address/0x68c5a88111b4d300734dbaece7b16b809e712263">https://basescan.org/address/0x68c5a88111b4d300734dbaece7b16b809e712263</a></td>
+<td>CollarTakerNFT WETH/USDC</td>
 </tr>
 <tr>
-<td style="text-align: left;">OracleUniV3TWAP.sol</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/pending"><strong>pending</strong></a></td>
-<td style="text-align: left;">Source of an asset&#x27;s final price, which determines user/marketmaker payout.</td>
+<td><a href="https://basescan.org/address/0x179ef7d08416cbee440b50e63deebc0b40770df3">https://basescan.org/address/0x179ef7d08416cbee440b50e63deebc0b40770df3</a></td>
+<td>CollarProviderNFT WETH/USDC</td>
 </tr>
 <tr>
-<td style="text-align: left;">Cash Asset (ERC20)</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/0x5D01F1E59C188a2A9Afc376cF6627dd5F28DC28F"><strong>0x5D01F1E59C188a2A9Afc376cF6627dd5F28DC28F</strong></a></td>
-<td style="text-align: left;">A temporary cash asset</td>
+<td><a href="https://basescan.org/address/0x737837bcea91bb5b248bcef7a5af3fcfd782b865">https://basescan.org/address/0x737837bcea91bb5b248bcef7a5af3fcfd782b865</a></td>
+<td>LoansNFT WETH/USDC</td>
 </tr>
 <tr>
-<td style="text-align: left;">Collatereal Asset (ERC20)</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/0x9A6E1a5f94De0aD8ca15b55eA0d39bEaEc579434"><strong>0x9A6E1a5f94De0aD8ca15b55eA0d39bEaEc579434</strong></a></td>
-<td style="text-align: left;">A temporary collateral asset for testing</td>
+<td><a href="https://basescan.org/address/0x183c1bd07ab423a779f419a197618f94faf8efe7">https://basescan.org/address/0x183c1bd07ab423a779f419a197618f94faf8efe7</a></td>
+<td>Rolls WETH/USDC</td>
 </tr>
 <tr>
-<td style="text-align: left;">Uniswap v3 Pool (Cash/Collateral)</td>
-<td style="text-align: left;"><a href="https://sepolia.arbiscan.io/address/0x25CC84570808B19Be4AA9bd3DFaF007411939176"><strong>0x25CC84570808B19Be4AA9bd3DFaF007411939176</strong></a></td>
-<td style="text-align: left;">A Uniswap V3 pool for the temporary cash and collateral assets for testing</td>
+<td><a href="https://basescan.org/address/0xca8c969218c29a6a2f732e0a27a4eeb9217b318b">https://basescan.org/address/0xca8c969218c29a6a2f732e0a27a4eeb9217b318b</a></td>
+<td>SwapperUniV3 500</td>
+</tr>
+<tr>
+<td><a href="https://basescan.org/address/0x8d1081e8a6e5c29ec3e6bdfe4d09a622ef22c369">https://basescan.org/address/0x8d1081e8a6e5c29ec3e6bdfe4d09a622ef22c369</a></td>
+<td>EscrowSupplierNFT WETH</td>
+</tr>
+<tr>
+<td><a href="https://basescan.org/address/0x688d5d1bbb6c9476ce9e838c78de43db9ab5e232">https://basescan.org/address/0x688d5d1bbb6c9476ce9e838c78de43db9ab5e232</a></td>
+<td>CombinedOracle cbBTC/USDC</td>
+</tr>
+<tr>
+<td><a href="https://basescan.org/address/0x28aff0dd8bb96e6cf4551bb1159b70746e84c072">https://basescan.org/address/0x28aff0dd8bb96e6cf4551bb1159b70746e84c072</a></td>
+<td>CollarTakerNFT cbBTC/USDC</td>
+</tr>
+<tr>
+<td><a href="https://basescan.org/address/0x9180d9cf00b772ea4cab31e3b86886b561b3dd44">https://basescan.org/address/0x9180d9cf00b772ea4cab31e3b86886b561b3dd44</a></td>
+<td>CollarProviderNFT cbBTC/USDC</td>
+</tr>
+<tr>
+<td><a href="https://basescan.org/address/0x117135ae96c46fea950a487af224797011236609">https://basescan.org/address/0x117135ae96c46fea950a487af224797011236609</a></td>
+<td>LoansNFT cbBTC/USDC</td>
+</tr>
+<tr>
+<td><a href="https://basescan.org/address/0xd243ee8a96f56f0f28300aeba4e0d811f7550e16">https://basescan.org/address/0xd243ee8a96f56f0f28300aeba4e0d811f7550e16</a></td>
+<td>Rolls cbBTC/USDC</td>
+</tr>
+<tr>
+<td><a href="https://basescan.org/address/0x125a3ce7eb6a67ea29bc1e92ce2b81962c4946df">https://basescan.org/address/0x125a3ce7eb6a67ea29bc1e92ce2b81962c4946df</a></td>
+<td>SwapperUniV3 500</td>
+</tr>
+<tr>
+<td><a href="https://basescan.org/address/0xa6b0d40e218e29ba626ead3da4e8f146027a802d">https://basescan.org/address/0xa6b0d40e218e29ba626ead3da4e8f146027a802d</a></td>
+<td>EscrowSupplierNFT cbBTC/USDC</td>
 </tr>
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="arbitrum-mainnet">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#arbitrum-mainnet">#</doc-anchor-trigger>
-        <span>Arbitrum Mainnet</span>
-    </h4>
+<doc-anchor-target id="base-sepolia">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#base-sepolia">#</doc-anchor-trigger>
+        <span>Base Sepolia</span>
+    </h3>
 </doc-anchor-target>
-<p>Coming soon!</p>
-<doc-anchor-target id="other-networks">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#other-networks">#</doc-anchor-trigger>
-        <span>Other Networks</span>
-    </h4>
-</doc-anchor-target>
-<p>See Roadmap</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Link</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x30caae57ab5a0d5778277cb60a349344b710e254">https://sepolia.basescan.org/address/0x30caae57ab5a0d5778277cb60a349344b710e254</a></td>
+<td>ConfigHub</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0xc7ee43bfb74b823f4db5b4f407a814842661c90a">https://sepolia.basescan.org/address/0xc7ee43bfb74b823f4db5b4f407a814842661c90a</a></td>
+<td>TWAPMockChainlinkFeed</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x4d88f4ccc503571b8f791983b75be8eea2f0d18a">https://sepolia.basescan.org/address/0x4d88f4ccc503571b8f791983b75be8eea2f0d18a</a></td>
+<td>ChainlinkOracle</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0xdfda96af84da8c23bfcf0bb03d1963e14cdeb9b2">https://sepolia.basescan.org/address/0xdfda96af84da8c23bfcf0bb03d1963e14cdeb9b2</a></td>
+<td>TWAPMockChainlinkFeed</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x7bec99ce9bf1faade5962eb1e03f6dbedadca94d">https://sepolia.basescan.org/address/0x7bec99ce9bf1faade5962eb1e03f6dbedadca94d</a></td>
+<td>ChainlinkOracle</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x69818d264791171f2d296996a7d620603c4de71b">https://sepolia.basescan.org/address/0x69818d264791171f2d296996a7d620603c4de71b</a></td>
+<td>FixedMockChainlinkFeed</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x7ba69d5323a7fcb1ed059a951e9f03c77a5dbbea">https://sepolia.basescan.org/address/0x7ba69d5323a7fcb1ed059a951e9f03c77a5dbbea</a></td>
+<td>ChainlinkOracle</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0xe86578d8fef3c70cb4faccbd2debc66ea1d4b373">https://sepolia.basescan.org/address/0xe86578d8fef3c70cb4faccbd2debc66ea1d4b373</a></td>
+<td>CombinedOracle</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x6a6d7521c783d71855c0867d7710e3d95e677393">https://sepolia.basescan.org/address/0x6a6d7521c783d71855c0867d7710e3d95e677393</a></td>
+<td>CollarTakerNFT</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0xe58e48135fd1a8e16c141bd5c8ce84537c2db135">https://sepolia.basescan.org/address/0xe58e48135fd1a8e16c141bd5c8ce84537c2db135</a></td>
+<td>CollarProviderNFT</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x3fa73ad9ec3527f1444283476ca74b81cbb8e5b9">https://sepolia.basescan.org/address/0x3fa73ad9ec3527f1444283476ca74b81cbb8e5b9</a></td>
+<td>LoansNFT</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x76850e70542cabc29eecce74de6d88340ce4f55a">https://sepolia.basescan.org/address/0x76850e70542cabc29eecce74de6d88340ce4f55a</a></td>
+<td>Rolls</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x25911776584d581f5457e77ef868f6d1b9371882">https://sepolia.basescan.org/address/0x25911776584d581f5457e77ef868f6d1b9371882</a></td>
+<td>SwapperUniV3</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0xc76a1bc79b876f8068fa695600c7a1a3e2f6545b">https://sepolia.basescan.org/address/0xc76a1bc79b876f8068fa695600c7a1a3e2f6545b</a></td>
+<td>EscrowSupplierNFT</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x7e7a725fc89074e57b17977cf5faa867e619c64f">https://sepolia.basescan.org/address/0x7e7a725fc89074e57b17977cf5faa867e619c64f</a></td>
+<td>CombinedOracle</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x8f66abe3012eb2b41429735723afe8f577165f2e">https://sepolia.basescan.org/address/0x8f66abe3012eb2b41429735723afe8f577165f2e</a></td>
+<td>CollarTakerNFT</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0xa210d1b753f4c27567616fc2526f7d049e71f981">https://sepolia.basescan.org/address/0xa210d1b753f4c27567616fc2526f7d049e71f981</a></td>
+<td>CollarProviderNFT</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x1807fc1080d88d3a29aa01e9b975eb7967120d6d">https://sepolia.basescan.org/address/0x1807fc1080d88d3a29aa01e9b975eb7967120d6d</a></td>
+<td>LoansNFT</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0xd821d17b2a32f651c58465ecdda97151bfcd1cf5">https://sepolia.basescan.org/address/0xd821d17b2a32f651c58465ecdda97151bfcd1cf5</a></td>
+<td>Rolls</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x8b41cadf6a85ff93de9946531d7c8867d6f83fb3">https://sepolia.basescan.org/address/0x8b41cadf6a85ff93de9946531d7c8867d6f83fb3</a></td>
+<td>SwapperUniV3</td>
+</tr>
+<tr>
+<td><a href="https://sepolia.basescan.org/address/0x924e1c13b28f5c083fa7a7972a14ff3a62011985">https://sepolia.basescan.org/address/0x924e1c13b28f5c083fa7a7972a14ff3a62011985</a></td>
+<td>EscrowSupplierNFT</td>
+</tr>
+</tbody>
+</table>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -287,7 +388,7 @@
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
