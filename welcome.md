@@ -2,30 +2,30 @@
 icon: home
 order: 10000
 title: Introduction
+# layout: central
 ---
 
-### Welcome to Collar!
+# Introducing Votre
 
-Collar is the best way to borrow against crypto.
+### A Smarter Way to Borrow Against Crypto
 
-Collar is completely non-custodial and does not rely on liquidations to remain solvent. Collar offers the highest LTVs in DeFi without introducing credit or counterparty risk. Collar is powered by solvers instead of liquidators as well as other DeFi primitives like Uniswap v3.
+Votre is a liquidation-free, non-custodial lending protocol that allows users to borrow against their crypto assets with high loan-to-value (LTV) ratios, no interest, and potential tax advantages. Unlike traditional lending platforms, Votre removes directional risk upfront, ensuring borrowers never face forced liquidation.
 
-Collar is short for “COLlaborative Lending ARrangement” (Collar). It also happens to match the name of an options strategy with a similar payout profile.
+By leveraging providers instead of liquidators, Votre guarantees performance up to a return cap, allowing borrowers to access liquidity while maintaining exposure to their assets.
 
-Collars are agreed upon offchain and settled onchain. For those of you Collar OG's, the new architecture is intent-based, relying on offchain, whitelisted solvers to ensure users receive prompt, competitive pricing on proposed Collars. This is called the Offchain Intent Platform throughout these docs.
+### Why Choose Votre?
 
-This documentation explains how Collar works and answers questions prospective borrowers may have. Borrowers can access Collar Protocol via the smart contracts directly or via the Collar Frontend, hosted at https://app.collarprotocol.xyz, launching later this year.
+- [x] **Liquidation-Free** – No risk of forced liquidation, as assets are swapped upfront.
+- [x] **Tax-Advantaged** – Borrowing can defer tax obligations in many jurisdictions.
+- [x] **Non-Custodial** – Users retain full control; positions can mature automatically.
+- [x] **Liquidity-Independent** – No reliance on unsustainable yield farming.
+- [x] **Interest-Free** – No ongoing interest payments; costs are priced into the initial terms.
+- [x] **High LTV** – LTVs as high as 95%, depending on provider terms.
+- [x] **Collateral-Efficient** – Requires minimal collateral without introducing credit risk.
+- [x] **Asset-Agnostic** – Works with any ERC-20 asset pair with DEX liquidity.
 
-For those who prefer a long-form historical and mathematical walkthrough, our whitepaper will be released in the coming months.
+Votre is designed for borrowers who want efficient, flexible, and secure access to liquidity without the drawbacks of traditional lending. Whether you’re an investor looking to unlock capital without selling assets or a fund manager optimizing capital efficiency, Votre provides a smarter way to borrow against crypto.
 
-Collar is not available in all jurisdictions or to all prospective borrowers. Usage of Collar may be limited by local regulation. Collar strives to comply with any and all applicable financial regulation; see disclosures for more.
-
-Below, we’ve put together a simple diagram, video, and cashflow tracking spreadsheet which explains in detail how Collar works.
-
-[Cashflow Tracking Sheet](https://docs.google.com/spreadsheets/d/1lqiA0cenlmkuer_e1YZHTPq0dOYr5d7rGd3WFy3ix1w/edit?usp=sharing)
-
-Video (under construction)
-
-Flow of Funds Diagram
-
-![](/static/collarintentflow.png)
+!!!
+Votre may not be available in all jurisdictions. Compliance with financial regulations varies by region — see [disclosures](./legal/Disclosures.md) and [eligibility](./legal/Eligibility.md) for more details.
+!!!
