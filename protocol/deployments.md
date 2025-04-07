@@ -27,28 +27,29 @@ label: "Deployments"
 | https://basescan.org/address/0x125a3ce7eb6a67ea29bc1e92ce2b81962c4946df | SwapperUniV3 500 |
 | https://basescan.org/address/0xa6b0d40e218e29ba626ead3da4e8f146027a802d | EscrowSupplierNFT cbBTC/USDC |
 
-### Base Sepolia
+### Base Sepolia (0.3.0, `b6bb876`)
 
 | Link | Name |
 |----------|---------|
-| https://sepolia.basescan.org/address/0x30caae57ab5a0d5778277cb60a349344b710e254 | ConfigHub |
-| https://sepolia.basescan.org/address/0xc7ee43bfb74b823f4db5b4f407a814842661c90a | TWAPMockChainlinkFeed |
-| https://sepolia.basescan.org/address/0x4d88f4ccc503571b8f791983b75be8eea2f0d18a | ChainlinkOracle |
-| https://sepolia.basescan.org/address/0xdfda96af84da8c23bfcf0bb03d1963e14cdeb9b2 | TWAPMockChainlinkFeed |
-| https://sepolia.basescan.org/address/0x7bec99ce9bf1faade5962eb1e03f6dbedadca94d | ChainlinkOracle |
-| https://sepolia.basescan.org/address/0x69818d264791171f2d296996a7d620603c4de71b | FixedMockChainlinkFeed |
-| https://sepolia.basescan.org/address/0x7ba69d5323a7fcb1ed059a951e9f03c77a5dbbea | ChainlinkOracle |
-| https://sepolia.basescan.org/address/0xe86578d8fef3c70cb4faccbd2debc66ea1d4b373 | CombinedOracle |
-| https://sepolia.basescan.org/address/0x6a6d7521c783d71855c0867d7710e3d95e677393 | CollarTakerNFT |
-| https://sepolia.basescan.org/address/0xe58e48135fd1a8e16c141bd5c8ce84537c2db135 | CollarProviderNFT |
-| https://sepolia.basescan.org/address/0x3fa73ad9ec3527f1444283476ca74b81cbb8e5b9 | LoansNFT |
-| https://sepolia.basescan.org/address/0x76850e70542cabc29eecce74de6d88340ce4f55a | Rolls |
-| https://sepolia.basescan.org/address/0x25911776584d581f5457e77ef868f6d1b9371882 | SwapperUniV3 |
-| https://sepolia.basescan.org/address/0xc76a1bc79b876f8068fa695600c7a1a3e2f6545b | EscrowSupplierNFT |
-| https://sepolia.basescan.org/address/0x7e7a725fc89074e57b17977cf5faa867e619c64f | CombinedOracle |
-| https://sepolia.basescan.org/address/0x8f66abe3012eb2b41429735723afe8f577165f2e | CollarTakerNFT |
-| https://sepolia.basescan.org/address/0xa210d1b753f4c27567616fc2526f7d049e71f981 | CollarProviderNFT |
-| https://sepolia.basescan.org/address/0x1807fc1080d88d3a29aa01e9b975eb7967120d6d | LoansNFT |
-| https://sepolia.basescan.org/address/0xd821d17b2a32f651c58465ecdda97151bfcd1cf5 | Rolls |
-| https://sepolia.basescan.org/address/0x8b41cadf6a85ff93de9946531d7c8867d6f83fb3 | SwapperUniV3 |
-| https://sepolia.basescan.org/address/0x924e1c13b28f5c083fa7a7972a14ff3a62011985 | EscrowSupplierNFT |
+| https://sepolia.basescan.org/address/0x6ce02fbbea5e933aea9565a630678a5f68432109 | ConfigHub |
+| https://sepolia.basescan.org/address/0x93346d84f437116114e74f2b2c1091a16f0d0686 | TWAPMockChainlinkFeed |
+| https://sepolia.basescan.org/address/0x026514b06bd79b2f47bd0f41d3da071b21f108c9 | ChainlinkOracle |
+| https://sepolia.basescan.org/address/0xfae5bd930c3521300bc36febaa5f5926b3e2a03f | TWAPMockChainlinkFeed |
+| https://sepolia.basescan.org/address/0x652be5fa3f8b84ba1f4028cf2c53df3b76b567b4 | ChainlinkOracle |
+| https://sepolia.basescan.org/address/0xd7baec6a4ff7075140a461488fd382cbc0bb0249 | FixedMockChainlinkFeed |
+| https://sepolia.basescan.org/address/0xc651942db464dbb9d2cf52ec21657474493718bd | ChainlinkOracle |
+| https://sepolia.basescan.org/address/0x534c7535454250574161c4ab0e23356a939e9530 | CombinedOracle |
+| https://sepolia.basescan.org/address/0x36d0face4e76c39a104a03c39738a69b946f6ead | CollarTakerNFT |
+| https://sepolia.basescan.org/address/0x7e4a569578c98c120b580d84bf94949ae598c2f1 | CollarProviderNFT |
+| https://sepolia.basescan.org/address/0x2eaabba4714e7ec1fcbbad77566e91f9ab093ead | LoansNFT |
+| https://sepolia.basescan.org/address/0xeb7c796d2f703811da5150bcf241d7f4ff9aa08c | Rolls |
+| https://sepolia.basescan.org/address/0x1cb3aaf674578c3f486e6fed6cf9e89c4d3e7a71 | SwapperUniV3 |
+| https://sepolia.basescan.org/address/0xc89cfc1fe84a5f5260b5f753e070296df5b07049 | EscrowSupplierNFT |
+| https://sepolia.basescan.org/address/0xca1bbace3ac0c68b7afd174b5c8b85e3490373de | CombinedOracle |
+| https://sepolia.basescan.org/address/0x759601aec5be0621e15bfbe47899e466f4e8f27d | CollarTakerNFT |
+| https://sepolia.basescan.org/address/0xa220fc553b8ae45f0c4891be53326a91d66497db | CollarProviderNFT |
+| https://sepolia.basescan.org/address/0xaaf7a36731ea5a9e58066e24d909dd32a73d4d22 | LoansNFT |
+| https://sepolia.basescan.org/address/0xd4909d4de2e5db0fd8716cd2913556224649b7db | Rolls |
+| https://sepolia.basescan.org/address/0x54968f818cdab93de4898a6322cb6d3c987023e2 | SwapperUniV3 |
+| https://sepolia.basescan.org/address/0xeb4fd19d21afbcb5df538d264cbc83993cc158cb | EscrowSupplierNFT |
+
