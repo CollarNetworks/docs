@@ -4,28 +4,28 @@ order: 100
 label: "Deployments"
 ---
 
-### Base Mainnet
+### Base Mainnet (0.3.0, [ca9ffd7](https://github.com/CollarNetworks/protocol-core/commit/ca9ffd7ecd382f49b3c792d5ac992cdbc434b084))
 
 | Link | Name |
 |----------|---------|
-| https://basescan.org/address/0x230158944a372dc8801dc112ac565f59579e6b4e | ConfigHub |
-| https://basescan.org/address/0x3c8907c85cfc509c5b28e2d48ecad5324f35e3c4 | ChainlinkOracle ETH/USD |
-| https://basescan.org/address/0x059718aa8f06864c291859a150a35da135cbcebe | ChainlinkOracle USDC/USD|
-| https://basescan.org/address/0x3d9453035f345f10de7bbaacf209af03fb253960 | ChainlinkOracle cbBTC/USD|
-| https://basescan.org/address/0x6e084fef7bbcd123ed1932c2e89d8aba7bb74be4 | CombinedOracle WETH/USDC |
-| https://basescan.org/address/0x68c5a88111b4d300734dbaece7b16b809e712263 | CollarTakerNFT WETH/USDC |
-| https://basescan.org/address/0x179ef7d08416cbee440b50e63deebc0b40770df3 | CollarProviderNFT WETH/USDC |
-| https://basescan.org/address/0x737837bcea91bb5b248bcef7a5af3fcfd782b865 | LoansNFT WETH/USDC |
-| https://basescan.org/address/0x183c1bd07ab423a779f419a197618f94faf8efe7 | Rolls WETH/USDC |
-| https://basescan.org/address/0xca8c969218c29a6a2f732e0a27a4eeb9217b318b | SwapperUniV3 500 |
-| https://basescan.org/address/0x8d1081e8a6e5c29ec3e6bdfe4d09a622ef22c369 | EscrowSupplierNFT WETH |
-| https://basescan.org/address/0x688d5d1bbb6c9476ce9e838c78de43db9ab5e232 | CombinedOracle cbBTC/USDC |
-| https://basescan.org/address/0x28aff0dd8bb96e6cf4551bb1159b70746e84c072 | CollarTakerNFT cbBTC/USDC |
-| https://basescan.org/address/0x9180d9cf00b772ea4cab31e3b86886b561b3dd44 | CollarProviderNFT cbBTC/USDC |
-| https://basescan.org/address/0x117135ae96c46fea950a487af224797011236609 | LoansNFT cbBTC/USDC |
-| https://basescan.org/address/0xd243ee8a96f56f0f28300aeba4e0d811f7550e16 | Rolls cbBTC/USDC |
-| https://basescan.org/address/0x125a3ce7eb6a67ea29bc1e92ce2b81962c4946df | SwapperUniV3 500 |
-| https://basescan.org/address/0xa6b0d40e218e29ba626ead3da4e8f146027a802d | EscrowSupplierNFT cbBTC/USDC |
+| https://basescan.org/address/0x9df9982b320bbef6930289e325b08be52b0da8bb | ConfigHub |
+| https://basescan.org/address/0x7ef9ed1911bcdd8f342c1a1b5473a26e7810ac74 | ChainlinkOracle |
+| https://basescan.org/address/0x3df6b4d330efe788f39cafae8633187187dcb1a6 | ChainlinkOracle |
+| https://basescan.org/address/0x46016e48162cff74d866bbe32852dc12732ecc2a | ChainlinkOracle |
+| https://basescan.org/address/0xf8b51d10307f4076d43ed8646dff0144adbfd5b9 | CombinedOracle |
+| https://basescan.org/address/0x674c357a26731874d3c1eaf2c00a1df4e0410121 | CollarTakerNFT |
+| https://basescan.org/address/0xdbc703f1df19ec3f0a43461c84a8c31db3c07b13 | CollarProviderNFT |
+| https://basescan.org/address/0x149cee65f43913f21f2b72b4d45206fde957e5e2 | LoansNFT |
+| https://basescan.org/address/0x5d189602fe891f56f00fa363be1401291b4eb4ce | Rolls |
+| https://basescan.org/address/0x982214c1debabb12ba81a4cce55412d0c50bad34 | SwapperUniV3 |
+| https://basescan.org/address/0xf2c42a0707927d6582072aeab7acb8a700455676 | EscrowSupplierNFT |
+| https://basescan.org/address/0xf286396153348974df4e7166619823e0230ff1ea | CombinedOracle |
+| https://basescan.org/address/0x3ec73f92afe1f1fa862fa2d877e730221df8065e | CollarTakerNFT |
+| https://basescan.org/address/0xb560c3a66e0af8b08a4e5a290f8ea651bf9dda4b | CollarProviderNFT |
+| https://basescan.org/address/0x67828bc77a84d12fbc8f0174797f2aa9f2766ce8 | LoansNFT |
+| https://basescan.org/address/0x9c7b346f85993f55c6fed828cbcb93882b87060e | Rolls |
+| https://basescan.org/address/0x8886f99a7f38c4c3d1dbe48dac62b3f2e33ec82f | SwapperUniV3 |
+| https://basescan.org/address/0x87c127d4413e67d38c25b543cf8fc2c4a5f2fbc3 | EscrowSupplierNFT |
 
 ### Base Sepolia (0.3.0, `b6bb876`)
 
