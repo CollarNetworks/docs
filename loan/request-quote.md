@@ -27,7 +27,7 @@ After reviewing the offers, you can approve the one that best suits your needs. 
 
 === 5. **Secure and Transparent**
 
-# The onchain management ensures that your loan is handled with the highest level of security and transparency, leveraging blockchain technology to maintain integrity and trust.
+The onchain management ensures that your loan is handled with the highest level of security and transparency, leveraging blockchain technology to maintain integrity and trust.
 
 ### Benefits
 
