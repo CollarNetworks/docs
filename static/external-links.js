@@ -8,18 +8,16 @@ function updateExternalLinks() {
       link.setAttribute("target", "_blank")
       link.setAttribute("rel", "noopener")
 
-      // Accessibility improvement: Add screen reader-only label
-      const srText = document.createElement("span")
-      srText.textContent = " (opens in a new tab)"
-      srText.classList.add("sr-only")
-
-      // Visual cue for external links (optional icon)
-      const icon = document.createElement("span")
-      icon.textContent = " ↗" // or use an icon font if you prefer
-      icon.setAttribute("aria-hidden", "true")
-
-      // Append only if not already appended
+      // Check if we’ve already added the icon
       if (!link.querySelector(".sr-only")) {
+        const srText = document.createElement("span")
+        srText.textContent = " (opens in a new tab)"
+        srText.classList.add("sr-only")
+
+        const icon = document.createElement("span")
+        icon.textContent = " ↗"
+        icon.setAttribute("aria-hidden", "true")
+
         link.appendChild(srText)
         link.appendChild(icon)
       }
@@ -27,5 +25,6 @@ function updateExternalLinks() {
   })
 }
 
-document.addEventListener("DOMContentLoaded", updateExternalLinks)
+// Fire after Retype finishes loading content
+document.addEventListener("retype.ready", updateExternalLinks)
 document.addEventListener("retype.page.loaded", updateExternalLinks)

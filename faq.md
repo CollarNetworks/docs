@@ -1,7 +1,7 @@
 ---
 icon: light-bulb
 label: FAQs
-order: 100
+order: 2
 ---
 
 # Frequently Asked Questions

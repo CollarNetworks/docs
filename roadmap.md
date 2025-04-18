@@ -1,6 +1,6 @@
 ---
 # icon: ":slightly_frowning_face:"
-order: 300
+order: 3
 icon: goal
 label: "Roadmap"
 ---
