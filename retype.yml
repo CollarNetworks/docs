@@ -19,11 +19,12 @@ links:
     link: https://app.votre.xyz
   - text: Learn about Votre
     link: https://votre.xyz
-  - text: Discord
-    link: https://discord.gg/hYjBBSp4Q4
-  - text: X
-    link: https://x.com/votre_inc
 
 footer:
+  links:
+    - text: Discord
+      link: https://discord.gg/hYjBBSp4Q4
+    - text: X (Twitter)
+      link: https://x.com/votre_inc
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 favicon: /static/favicon.ico

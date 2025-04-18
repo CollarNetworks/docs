@@ -28,6 +28,20 @@
   color: #e5ba59;
 }
 
+main a[href="https://x.com/votre_inc"].transition-colors, 
+main a[href="https://discord.gg/hYjBBSp4Q4"].transition-colors
+{
+  color: #e5ba59;
+  background-color: #0d0f23;
+  border-color: #56b0ec;
+}
+
+main a[href="https://x.com/votre_inc"].transition-colors:hover, 
+main a[href="https://discord.gg/hYjBBSp4Q4"].transition-colors:hover
+{
+  background-color: #181c40 !important;
+}
+
 #docs-app :is(.dark .dark\:bg-blue-400) {
   background-color: #e5ba59;
 }
