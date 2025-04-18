@@ -14,11 +14,17 @@ branding:
 
 links:
   - text: Home
-    link: https://votre.xyz
+    link: https://docs.votre.xyz
   - text: App
     link: https://app.votre.xyz
-  - text: Discord
-    link: https://discord.gg/WBygxVrT
+  - text: Learn about Votre
+    link: https://votre.xyz
+
 footer:
+  links:
+    - text: Discord
+      link: https://discord.gg/hYjBBSp4Q4
+    - text: X (Twitter)
+      link: https://x.com/votre_inc
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 favicon: /static/favicon.ico

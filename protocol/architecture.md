@@ -9,7 +9,7 @@ label: "Architecture"
 
 Central configuration hub that manages protocol permissions and parameters. Handles contract authorization, protocol fees, valid parameter ranges, and emergency pause functionality.
 
-### CollarTakerNFT.sol & CollarProviderNFT.sol
+### CollarTakerNFT.sol & CollarProviderNFT.sol & EscrowSupplierNFT.sol
 
 Form the foundation of the protocol's collar positions:
 
@@ -25,6 +25,14 @@ Form the foundation of the protocol's collar positions:
 - Manages provider positions and protocol fees
 - Handles provider side position settlement by taker NFT, and provider withdrawals
 
+### EscrowSupplierNFT.sol
+
+Optional (for non-U.S. users) system for escrow-backed loans:
+
+- Manages escrow positions with fixed interest rates
+- Handles position lifecycle including late fees
+- Provides tax-efficient loan structure
+
 ### LoansNFT.sol
 
 Primary entry point for borrowers, offering collateralized loans through collar positions:
@@ -37,14 +45,6 @@ Primary entry point for borrowers, offering collateralized loans through collar 
 4. Supports keeper-assisted operations for time sensitive operations
 5. Enables loan extensions through Rolls contracts
 6. Optionally supports escrow-backed loans
-
-### EscrowSupplierNFT.sol
-
-Optional system for escrow-backed loans:
-
-- Manages escrow positions with fixed interest rates
-- Handles position lifecycle including late fees
-- Provides tax-efficient loan structure
 
 ### Rolls.sol
 

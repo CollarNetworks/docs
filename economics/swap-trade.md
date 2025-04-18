@@ -8,16 +8,20 @@ Below is a step-by-step walkthrough of a sample trade using Votre.
 ### Trade Setup
 
 - Borrower: ABC Capital, a liquid token fund
-- Loan collateral: wstETH (~$2,000 per wstETH)
+- Loan collateral: wETH (~$2,000 per wETH)
 - Loan currency: USDC
 - Loan-to-value (LTV): 90%
 - Loan duration: 3 months
 - Votre protocol fee: 1%
 - Objective: Maximize return while avoiding liquidation risk
 
+---
+
 ### Why ABC Capital Uses Votre
 
-ABC Capital wants to borrow USDC without selling their wstETH holdings. Traditional lending platforms like AAVE expose them to liquidation risk. Instead, they use Votre to unlock capital without forced liquidation and while maintaining exposure to wstETH.
+ABC Capital wants to borrow USDC without selling their wETH holdings. Traditional lending platforms like AAVE expose them to liquidation risk. Instead, they use Votre to unlock capital without forced liquidation and while maintaining exposure to wETH.
+
+---
 
 ### Executing the Trade
 
@@ -36,26 +40,30 @@ ABC Capital visits votre.xyz, connects their wallet, and follows these steps:
 ##### 3. Onchain Offer Creation
 
 - JSR prepares an onchain Offer, posting 200 USDC in collateral to secure the trade. 4. Trade Execution
-- ABC Capital accepts the offer, depositing wstETH into Votre. 5. Collateral Swap & Loan Issuance
-- Votre swaps wstETH for USDC using Uniswap v3, accounting for slippage.
+- ABC Capital accepts the offer, depositing wETH into Votre. 5. Collateral Swap & Loan Issuance
+- Votre swaps wETH for USDC using Uniswap v3, accounting for slippage.
 - Loan funds are sent to ABC Capital, while collateral is locked for settlement.
+
+---
 
 ### Managing & Extending the Loan
 
-##### If wstETH Rises 7%
+##### If wETH Rises 7%
 
 - ABC Capital extends the loan to lock in gains.
 - JSR provides updated loan terms via Votre’s Offchain Intent Platform.
 - ABC Capital accepts the roll, adjusting the collateral to reflect new pricing.
 
-##### If wstETH Drops 30%
+##### If wETH Drops 30%
 
-- ABC Capital still believes in wstETH and wants to extend.
-- JSR offers new terms, requiring 0.29 wstETH to cover losses.
+- ABC Capital still believes in wETH and wants to extend.
+- JSR offers new terms, requiring 0.29 wETH to cover losses.
 - ABC Capital can:
 - Accept and post more collateral to extend the loan.
 - Wait until maturity, hoping for a price rebound.
 - Sell back part of the position to exit early.
+
+---
 
 ### At Maturity
 

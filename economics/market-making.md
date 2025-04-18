@@ -24,4 +24,4 @@ Collar, unlike many other DeFi protocols, does not rely on unsustainable incenti
 
 For now, marketmaking is permissionless onchain and access to the Offchain Intent Platform is whitelisted. This will be decentralized over time. This whitelist currently contains three Founding Solvers, similar to [Arbitrum Nova's Data Availability Committee](https://docs.arbitrum.foundation/concepts/security-council).
 
-If you're interested in becoming a marketmaker for the Offchain Intent Platform, you can submit an inquiry to operations@collarnetworks.com . Requirements include full API pricing of crypto-linked options.
+If you're interested in becoming a marketmaker for the Offchain Intent Platform, you can submit an inquiry to [operations@collarnetworks.com](mailto:operations@collarnetworks.com). Requirements include full API pricing of crypto-linked options.
