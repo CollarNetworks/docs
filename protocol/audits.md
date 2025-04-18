@@ -6,7 +6,4 @@ label: "Audits"
 
 # Audits
 
-Completed audit information available for review:
-
-| Auditor | Link | Completed on: |
-| ------- | ---- | ------------- |
+Audit information available for review at our [Github protocol repo](https://github.com/CollarNetworks/protocol-core/tree/develop/audits).
