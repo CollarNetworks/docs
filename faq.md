@@ -31,16 +31,16 @@ Like any spread, it is a function of the number of providers. Votre will go live
 Because in bull markets it can be beneficial to take chips off the table or even redeploy borrowed collateral into a new position for greater capital efficiency. Users can also “roll” their positions higher as assets appreciate to maintain exposure so long as there is sufficient provider-provided liquidity.
 
 ==- How is the final price determined?
-Uniswap TWAP oracles
+Uniswap TWAP oracles.
 
 ==- What venues does the protocol swap on?
-Uniswap for now, but this may expand in the future as liquidity improves
+Uniswap for now, but this may expand in the future as liquidity improves.
 
 ==- Does swapping create slippage?
 Yes, but compared to interest rates and capital requirements of other protocols, this is minimal.
 
 ==- Does Votre charge interest?
-Since users are providing the collateral required for the directional hedge, there is no need to charge interest to source collateral or funds.
+Votre does not charge interest. However, If you use an escrow service, suppliers may charge interest.
 
 ==- What if a provider fails like in 2022?
 All provider collateral is locked into Votre’s smart contracts, so they'll only get money back at maturity once the final price of the asset is in. Additionally, both sides of a Votre position are represented as NFTs, which can be sold, traded, or united to unwind a position.
@@ -49,11 +49,14 @@ All provider collateral is locked into Votre’s smart contracts, so they'll onl
 Other protocols liquidate your collateral at the worst possible time. Votre creates a time-based, as opposed to a price-based loan.
 
 ==- Does swapping create a taxable event?
-Protocols can’t give tax advice, but this is an issue that is solved by a feature called “supplier mode”, which introduces suppliers to Votre. By escrowing user collateral day one and charging users interest, Votres may allow capital gains to be deferred in some jurisdictions. Speak to your tax professional for more information.
+Protocols can’t give tax advice, but this is an issue that is likely solved by using an escrow service, which introduces suppliers to Votre. By escrowing user collateral and charging users interest, Votres may allow capital gains to be deferred in some jurisdictions. Speak to your tax professional for more information.
 
 ==- But what if my token moons?
-If prices go up, [roll!](./loan/roll-loan.md) Rolling is like a checkpoint in a video game you can always fall back to. Think of it like going up the salmon ladder. There's certainly a cost to rolling, but there's a bigger cost to not having protection.
+If prices go up, [you can roll your loan!](./loan/roll-loan.md) Rolling is like a checkpoint in a video game you can always fall back to. Think of it like going up the salmon ladder. There's certainly a cost to rolling, but there's a bigger cost to not having protection.
+
+==- What is a supplier?
+A person usually with a large amount of tokens such as BTC or ETH, who wants to generate yield in the form of interest on their tokens.
 
 ==- Where do you get supply?
-From users who want to earn yield
+From suppliers who want to earn yield on their collateral (BTC, ETH, etc.).
 ===

@@ -4,7 +4,7 @@ order: 91
 label: "Monetization"
 ---
 
-Solvers price in a required fee for the protocol of 80 basis points (0.8%). This is in line with other protocols and platforms in the space.
+Solvers price in a required fee for the protocol of 90 basis points (0.9%). This is in line with other protocols and platforms in the space.
 
 - Opensea - 2.5% secondary - 10% primary drops
 - Uniswap - 0.05% stables - 0.30% on majors - 1% on most volatile
