@@ -3,7 +3,9 @@ order: 150
 label: "Eligibility"
 ---
 
-Collar is only available to and designed for sophisticated investors and non-US persons at this time.
+Collar is only available to and designed for sophisticated investors at this time.
+
+---
 
 **Non-US**
 
@@ -19,7 +21,9 @@ CFTC will interpret the term “U.S. person” generally to include, but not be 
 (vii) any legal entity (other than a limited liability company, limited liability partnership or similar entity where all of the owners of the entity have limited liability) that is directly or indirectly majority-owned by one or more persons described in prong (i), (ii), (iii), (iv), or (v) and in which such person(s) bears unlimited responsibility for the obligations and liabilities of the legal entity; and
 (viii) any individual account or joint account (discretionary or not) where the beneficial owner (or one of the beneficial owners in the case of a joint account) is a person described in prong (i), (ii), (iii), (iv), (v), (vi), or (vii).
 –
-See Interpretive Guidance and Policy Statement Regarding Compliance with Certain Swap Regulations, 78 Fed. Reg. 45,292 (July 26, 2013), linked [here](https://www.federalregister.gov/documents/2013/07/26/2013-17958/interpretive-guidance-and-policy-statement-regarding-compliance-with-certain-swap-regulations).
+See [Interpretive Guidance and Policy Statement Regarding Compliance with Certain Swap Regulations, 78 Fed. Reg. 45,292 (July 26, 2013)](https://www.federalregister.gov/documents/2013/07/26/2013-17958/interpretive-guidance-and-policy-statement-regarding-compliance-with-certain-swap-regulations).
+
+---
 
 **US**
 
@@ -47,4 +51,4 @@ HNWIs and Institutions must be one of the below requirements in order to use Col
 10. a BD or AP of a BD
 11. a CTA
 
-For a more thorough definition please visit https://www.law.cornell.edu/definitions/uscode.php?width=840&height=800&iframe=true&def_id=7-USC-1679330354-1954888350&term_occur=999&term_src=
+For a more thorough definition please visit [this U.S. Code Definition](https://www.law.cornell.edu/definitions/uscode.php?width=840&height=800&iframe=true&def_id=7-USC-1679330354-1954888350&term_occur=999)

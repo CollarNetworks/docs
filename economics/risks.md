@@ -20,6 +20,8 @@ These include sequencer downtime, MEV, or any other bespoke risk to any layer 2 
 Users, when repaying loans, must consider the liquidity of the market they are repaying into. If the Uni v3 pool is illiquid, slippage could eat up a large portion of repaid funds, leading to poor execution.
 ==-
 
+---
+
 ### Key Limitations
 
 ==- Users must be comfortable temporarily limiting upside in order to protect downside
@@ -42,3 +44,5 @@ Solvers may not be willing to quote the latest dog, frog, or memecoin.
 
 ==- Market impact upon sale of assets into DEX
 It's arguably better to have the market absorb this sale in good times rather than bad, however market impact is largely unavoidable, as it's inherently bearish to borrow against an asset.
+
+===

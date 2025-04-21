@@ -9,7 +9,7 @@ title: Introduction
 
 ### A Smarter Way to Borrow Against Crypto
 
-Votre is a liquidation-free, non-custodial lending protocol that allows users to borrow against their crypto assets with high loan-to-value (LTV) ratios, no interest, and potential tax advantages. Unlike traditional lending platforms, Votre removes directional risk upfront, ensuring borrowers never face forced liquidation.
+Votre is a liquidation-free, non-custodial lending protocol that allows users to borrow against their crypto assets with high loan-to-value (LTV) ratios, low interest, and potential tax advantages. Unlike traditional lending platforms, Votre removes directional risk upfront, ensuring borrowers never face forced liquidation.
 
 By leveraging providers instead of liquidators, Votre guarantees performance up to a return cap, allowing borrowers to access liquidity while maintaining exposure to their assets.
 

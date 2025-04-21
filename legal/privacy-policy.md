@@ -150,7 +150,7 @@ To protect your NPI, we implement industry-standard security measures, such as e
 You have the following rights regarding your personal information:
 
 Access and Correction: You can request access to or correction of your personal information.
-Opt-Out: We may share your NPI with select third-party service providers to facilitate the operation of our services. In certain circumstances, you have the right to opt-out of information sharing with non-affiliated third parties. To request this, please contact us at support@collarnetworks.com .
+Opt-Out: We may share your NPI with select third-party service providers to facilitate the operation of our services. In certain circumstances, you have the right to opt-out of information sharing with non-affiliated third parties. To request this, please contact us at [support@collarnetworks.com](mailto:support@collarnetworks.com) .
 Deletion: You can request the deletion of your personal information, subject to certain legal requirements.
 
 8. Third-Party Links
@@ -169,6 +169,6 @@ We may update this Privacy Policy from time to time. We will notify you of any s
 
 If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:
 
-support@collarnetworks.com
+[support@collarnetworks.com](mailto:support@collarnetworks.com)
 
 Collar Networks, Inc.
