@@ -11,8 +11,8 @@ Solvers price in a required fee for the protocol of 90 basis points (0.9%). This
 - AAVE / Solend - 5% liquidation bonus, 50bps to AAVE for majors, up to 15% + 1.5% on most volatile
 - Lido - 10% fees on staking rewards
 
-Collar - 0.80% \* maturity (in years). E.g. a 6 month Collar would have a 40bp fee.
+Votre - 0.90% \* maturity (in years). E.g. a 6 month Votre would have a 45bp fee.
 
-A critical difference between Collar and other protocols is that borrowers, protocol, and solvers all make more when crypto goes up, whereas liquidation revenue is higher when markets sell off.
+A critical difference between Votre and other protocols is that borrowers, protocol, and solvers all make more when crypto goes up, whereas liquidation revenue is higher when markets sell off.
 
-Fees are paid onchain to the multi-sig controlled Collar Protocol treasury address.
+Fees are paid onchain to the multi-sig controlled Votre treasury address.
