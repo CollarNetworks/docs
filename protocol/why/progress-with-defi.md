@@ -13,7 +13,7 @@ Bitcoin (2009), was the first example of this new approach, creating bankless mo
 
 This feature allowed for the deployment of trustless, decentralized finance applications (DeFi) that fluorished during the summer of 2020 and matured into an autonomous, error-free 24/7 financial system for the world.
 
-However, the demand for DeFi applications outpaced wstETHereum's capacity, leading to the creation of Layer 2 solutions, which increased the system's ability to handle more transactions with lower transaction costs (gas).
+However, the demand for DeFi applications outpaced Ethereum's capacity, leading to the creation of Layer 2 solutions, which increased the system's ability to handle more transactions with lower transaction costs (gas).
 
 In 2022, while traditional banks such as SVB, First Republic, and even globally systemically important banks (GSIBs) such as Credit Suisse struggled due to poor risk management, DeFi protocols operated seamlessly, suggesting their potential as a solid alternative to traditional systems.
 
