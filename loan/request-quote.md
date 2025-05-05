@@ -3,7 +3,7 @@ order: 9
 label: "Request Quote"
 ---
 
-# Requesting a Quote with Votre
+# Requesting a Quote
 
 Customize your personal loan experience by requesting a quote through Votre. This process is designed to be efficient and user-friendly, ensuring you receive competitive offers tailored to your needs.
 
