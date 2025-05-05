@@ -31,7 +31,7 @@ This can be partially mitigated with rolls and even more so with "auto-roll", wh
 Where there is money to be made, solvers tend to participate.
 
 ==- Lack of AMM liquidity
-This is rarely an issue, after all, if there's no spot market, why even try to create products that are more complex.
+Limited automated market maker (AMM) liquidity can make it difficult to exit or hedge positions efficiently, especially in less popular markets. This is rarely an issue as we will only add assets with healthy spot markets, but it's still a factor when considering broader product expansion.
 
 ==- Potential barriers to understanding and entry
 Votre can be a lot for the average user to understand, which is why we're committed to transparency and simplicity.
@@ -40,7 +40,7 @@ Votre can be a lot for the average user to understand, which is why we're commit
 Solvers may not always provide roll pricing, which is a risk.
 
 ==- Lack of desire for solvers to quote the most volatile of tail assets
-Solvers may not be willing to quote the latest dog, frog, or memecoin.
+Assets with extreme volatility or limited liquidity — such as newly launched memecoins or fringe tokens — are often not quoted by solvers, which restricts the range of tokens we can effectively support.
 
 ==- Market impact upon sale of assets into DEX
 It's arguably better to have the market absorb this sale in good times rather than bad, however market impact is largely unavoidable, as it's inherently bearish to borrow against an asset.
