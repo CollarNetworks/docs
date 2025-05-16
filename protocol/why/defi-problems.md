@@ -1,6 +1,6 @@
 ---
 order: 170
-label: "DeFi Problems: Liquidations"
+label: "DeFi Problem: Liquidations"
 ---
 
 #### No protocol has properly addressed the elephant in the room of DeFi UX
@@ -18,7 +18,3 @@ This forces borrowers to compromise on one of three terms:
 3. the stability of the borrowed asset
 
 Attempted solutions to this problem have historically involved the introduction of new risks or explicit costs to borrowers, such as centralization risk, credit risk, or the purchase of liquidation insurance.
-
-Fortunately, traditional finance (TradFi) solved this problem a long time ago with the invention of the “prepaid variable forward” or “collar” where users agree to sell an asset within a price range some time in the distant future in exchange for an upfront cash payment.
-
-This trade preserves exposure to the underlying asset, which not only allows borrowers to unlock larger loans, but can even help defer capital gains taxes, providing a bridge to a step-up in basis for the borrower’s estate.

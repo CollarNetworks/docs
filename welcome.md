@@ -22,7 +22,7 @@ By leveraging providers instead of liquidators, Votre guarantees performance up 
 - [x] **Interest-Free** – No ongoing interest payments; costs are priced into the initial terms.
 - [x] **High LTV** – LTVs as high as 95%, depending on provider terms.
 - [x] **Collateral-Efficient** – Requires minimal collateral without introducing credit risk.
-- [x] **Asset-Agnostic** – Works with any ERC-20 asset pair with DEX liquidity.
+- [x] **Asset-Agnostic** – Works with any ERC-20 asset pair with DEX liquidity. Only cbBTC & WETH will be available at launch.
 
 Votre is designed for borrowers who want efficient, flexible, and secure access to liquidity without the drawbacks of traditional lending. Whether you’re an investor looking to unlock capital without selling assets or a fund manager optimizing capital efficiency, Votre provides a smarter way to borrow against crypto.
 

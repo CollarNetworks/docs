@@ -5,6 +5,10 @@ label: "Roll Loan"
 
 # Rolling a Loan
 
+### What is Rolling a Loan?
+
+Rolling a loan means repaying an existing loan by taking out a new one, typically with the same or updated terms, in order to extend the duration of the borrowing.
+
 ### How to Roll a Loan
 
 To roll a loan, look for a roll proposal on your loan details page.

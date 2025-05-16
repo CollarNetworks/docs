@@ -3,7 +3,7 @@ order: 10
 label: "Login"
 ---
 
-# Logging in to Votre
+# Log In
 
 Welcome to Votre! Here's a quick guide to ensure a smooth and secure login experience.
 

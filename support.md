@@ -7,7 +7,7 @@ title: Support
 
 # Support
 
-For any questions or assistance, our support team is ready to help and answer any questions you may have. You can reach out to us on [discord](https://discord.gg/hYjBBSp4Q4).
+For any questions or assistance, our support team is ready to help and answer any questions you may have. You can reach out to us on [discord](https://discord.gg/hYjBBSp4Q4) or email us at [support@votre.xyz](mailto:support@votre.xyz).
 
 ---
 

@@ -5,7 +5,7 @@ label: "Manage Loans"
 
 <!-- ![Votre manage loans](/static/images/manage-loans.png) -->
 
-# Managing Your Loans with Votre
+# Managing Your Loans
 
 Once your loan is accepted and authorized onchain, Votre provides a robust loan management dashboard. This tool is designed to give you a comprehensive view of all your positions on the platform, ensuring you have the information you need to manage your loans effectively.
 

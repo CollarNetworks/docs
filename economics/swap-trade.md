@@ -39,8 +39,12 @@ ABC Capital visits votre.xyz, connects their wallet, and follows these steps:
 
 ##### 3. Onchain Offer Creation
 
-- JSR prepares an onchain Offer, posting 200 USDC in collateral to secure the trade. 4. Trade Execution
-- ABC Capital accepts the offer, depositing wETH into Votre. 5. Collateral Swap & Loan Issuance
+- JSR prepares an onchain Offer, posting 200 USDC in collateral to secure the trade.
+  
+##### 4. Trade Execution
+- ABC Capital accepts the offer, depositing wETH into Votre.
+
+##### 5. Collateral Swap & Loan Issuance
 - Votre swaps wETH for USDC using Uniswap v3, accounting for slippage.
 - Loan funds are sent to ABC Capital, while collateral is locked for settlement.
 
@@ -59,9 +63,9 @@ ABC Capital visits votre.xyz, connects their wallet, and follows these steps:
 - ABC Capital still believes in wETH and wants to extend.
 - JSR offers new terms, requiring 0.29 wETH to cover losses.
 - ABC Capital can:
-- Accept and post more collateral to extend the loan.
-- Wait until maturity, hoping for a price rebound.
-- Sell back part of the position to exit early.
+  - Accept and post more collateral to extend the loan.
+  - Wait until maturity, hoping for a price rebound.
+  - Sell back part of the position to exit early.
 
 ---
 

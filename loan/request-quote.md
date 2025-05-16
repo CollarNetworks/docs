@@ -3,7 +3,7 @@ order: 9
 label: "Request Quote"
 ---
 
-# Requesting a Quote with Votre
+# Requesting a Quote
 
 Customize your personal loan experience by requesting a quote through Votre. This process is designed to be efficient and user-friendly, ensuring you receive competitive offers tailored to your needs.
 
@@ -15,7 +15,7 @@ Begin by filling out the necessary details for your loan request. This includes 
 
 === 2. **Supplier Network Engagement**
 
-Once submitted, Votre will publish your request to our curated network of suppliers. These suppliers will review your request and provide personalized offers in real-time.
+Once submitted, Votre will publish your request to our curated network of [suppliers](https://docs.votre.xyz/faq/#what-is-a-supplier). These suppliers will review your request and provide personalized offers in real-time.
 
 === 3. **Offchain Management**
 
