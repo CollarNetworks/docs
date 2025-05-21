@@ -13,6 +13,9 @@ In the synchronous model, Suppliers and Providers respond directly to specific b
 ### How It Works
 
 - Open loan requests from users appear in the **Offer Requests** tab for Suppliers and Providers.
+
+![Suppliers Offer Request Page](/static/images/supplier-offer-request.png)
+
 - Upon viewing a request, solvers can send a proposal tailored to the user's ask:
   - **Suppliers** submit an **Escrow Proposal**, specifying:
     - Interest APR
