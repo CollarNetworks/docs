@@ -37,13 +37,14 @@ In the synchronous model, Suppliers and Providers respond directly to specific b
 
 ### ✅ Pros
 
-- Enables more **customized proposals** tailored to each user's loan request.
-- Creates **competitive dynamics** between Suppliers and Providers, which may lead to better terms for the user.
+- Enables more **customized proposals** tailored to each user's loan request  
+- Creates **competitive dynamics** between Suppliers and Providers, potentially leading to better terms  
+- **Capital is only locked when needed**, meaning assets are committed *just-in-time* after a user expresses interest  
 
 ### ❌ Cons
 
-- Users must **wait** for proposals before moving forward in the loan process.
-- This delay increases the chances of user drop-off before a proposal is received, which can result in **fewer loans being completed**.
+- Users must **wait** for proposals before moving forward in the loan process  
+- This delay increases the risk of **user drop-off** before a proposal is received, resulting in fewer completed loans  
 
 ---
 
@@ -61,13 +62,14 @@ In the asynchronous model, Suppliers and Providers offer terms for theoretical l
 
 ### ✅ Pros
 
-- **Faster loan creation**: Users often see immediate proposals that match their request.
-- Higher conversion rates due to **reduced wait times**.
+- **Faster loan creation**: Users often see immediate proposals that match their request  
+- Higher conversion rates due to **reduced wait times**  
 
 ### ❌ Cons
 
-- Users may not get the **best possible terms**, since offers are not tailored to their specific request.
-- Less room for **customization**, since the proposal terms are fixed ahead of time.
+- Users may not get the **best possible terms**, since offers are not tailored to their specific request  
+- Less room for **customization**, since terms are pre-submitted and fixed  
+- **Capital must be pre-committed**, which means solvers lock up assets *before* knowing if they’ll be used — potentially reducing capital efficiency  
 
 ---
 
@@ -75,11 +77,12 @@ In the asynchronous model, Suppliers and Providers offer terms for theoretical l
 
 | Feature               | Synchronous                              | Asynchronous                             |
 |----------------------|------------------------------------------|------------------------------------------|
-| Customization        | High                                      | Medium                                    |
+| Customization        | High                                     | Medium                                   |
 | Speed                | Slower (wait for proposal)               | Fast (instant match)                     |
-| Competition          | Encourages competitive offers             | Less direct competition                  |
-| Risk of User Dropoff | Higher                                     | Lower                                     |
-| Best Use Case        | For large or unique loans needing review  | For typical loans needing quick access   |
+| Competition          | Encourages competitive offers            | Less direct competition                  |
+| Risk of User Dropoff | Higher                                   | Lower                                    |
+| Capital Efficiency   | High – capital locked only when used     | Lower – capital pre-committed            |
+| Best Use Case        | For large or unique loans needing review | For typical loans needing quick access   |
 
 ---
 
