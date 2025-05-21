@@ -23,7 +23,17 @@ In the synchronous model, Suppliers and Providers respond directly to specific b
     - Grace Period (1–30 days)
   - **Providers** submit a **Callstrike Proposal**, specifying:
     - Cap (maximum loss)
-- Once submitted, the proposal is sent to the user, who can either accept or ignore it.
+- Once submitted, the proposal will move from the **Open Requests** section to the **Proposed Requests** section and will be sent to the user, who can either accept or ignore it.
+- The app let's Suppliers and Providers know if their proposal is the top offer or not, and will give them the option to update the proposal and provide the user better terms to win the bid for the loan.
+
+![Suppliers Offer Request Page](/static/images/proposed-request.png)
+
+- If the user accepts the proposal, the proposal will move from the **Proposed Requests** to the **Accepted Requests** section.
+- Once in this section, the Supplier or Provider whose offer was accepted by the user will execute the offer onchain by clicking the **Execute** button which will prompt an onchain signature.
+
+![Suppliers Offer Request Page](/static/images/execute-request.png)
+
+- Once both the Supplier and Provider execute the request, the loan will commence. 
 
 ### ✅ Pros
 
