@@ -22,6 +22,11 @@ Votre rewards its community through a points-based system designed to incentiviz
 
 > *Notional amount is based on the USD value of the underlying asset at the time of loan origination or roll.*
 
+### Where to track points
+
+You can track your points and access your unique referral link [here](https://app.fuul.xyz/incentives/votre-protocol). Once you're on the site, connect your wallet to see your points.
+> Please ensure you connect the **same wallet** used for your loan activity on Votre. Points are tracked based on your on-chain wallet address.
+
 ---
 
 ### Anti-Airdrop Farming Policy
