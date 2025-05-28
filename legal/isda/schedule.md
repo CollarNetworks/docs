@@ -84,11 +84,11 @@ b) Other documents to be delivered are:
 
 a) ***Addresses for Notices.***
 
-  i) Notices relating to any Transaction should be sent to the contact details provided by the relevant party in the applicable Confirmation (or, if not specified, the party’s general contact info on record).
+  (i) Notices relating to any Transaction should be sent to the contact details provided by the relevant party in the applicable Confirmation (or, if not specified, the party’s general contact info on record).
 
-  ii) Notices under Section 5 (Events of Default) or Section 6 (Early Termination) must be sent to the contact details on file and accompanied by a copy sent to the Borrower’s designated email address, which shall not constitute formal notice.
+  (ii) Notices under Section 5 (Events of Default) or Section 6 (Early Termination) must be sent to the contact details on file and accompanied by a copy sent to the Borrower’s designated email address, which shall not constitute formal notice.
 
-  iii) Borrowers agree to maintain up-to-date contact details via the Platform and acknowledge that electronic notice suffices for the purposes of this Agreement.
+  (iii) Borrowers agree to maintain up-to-date contact details via the Platform and acknowledge that electronic notice suffices for the purposes of this Agreement.
 
 b) ***Process Agent.***  For the purpose of Section 13(c) of this Agreement:
 
@@ -118,9 +118,9 @@ g) ***Credit Support Provider.***
 
 h) ***Governing Law and Jurisdiction.***  Sections 13(a) and (b) of the Agreement are deleted in their entirety and replaced with the following:
 
-  i)	Governing Law.  This Agreement and any non-contractual obligations arising out of or in connection with it will be governed by and construed in accordance with the laws of the State of New York without reference to the choice of law doctrine that would result in application of the laws of another jurisdiction.
+  (i)	Governing Law.  This Agreement and any non-contractual obligations arising out of or in connection with it will be governed by and construed in accordance with the laws of the State of New York without reference to the choice of law doctrine that would result in application of the laws of another jurisdiction.
 
-  ii)	Jurisdiction. With respect to any dispute, claim, difference or controversy arising out of, relating to or having any connection with this Agreement, including any dispute as to its existence, validity, interpretation, performance, breach or termination or the consequences of its nullity and any dispute relating to any non-contractual obligations arising out of or in connection with it (“Proceedings”), each party irrevocably:-
+  (ii)	Jurisdiction. With respect to any dispute, claim, difference or controversy arising out of, relating to or having any connection with this Agreement, including any dispute as to its existence, validity, interpretation, performance, breach or termination or the consequences of its nullity and any dispute relating to any non-contractual obligations arising out of or in connection with it (“Proceedings”), each party irrevocably:-
 
    A) submits to the non-exclusive jurisdiction of the courts of the State of New York and the United States District Court located in the Borough of Manhattan in New York City;
 
@@ -134,13 +134,13 @@ j) ***No Agency.***  The provisions of Section 3(g) of this Agreement will apply
 
 k) ***Additional Representation*** will apply.  For the purpose of Section 3 of this Agreement, the following will each constitute an Additional Representation that each party makes to the other party (which representation will be deemed to be repeated by each party on each date on which a Transaction is entered into):
 
-i) **Non-Reliance.**  It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary.  It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction.  No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
+(i) **Non-Reliance.**  It is acting for its own account, and it has made its own independent decisions to enter into that Transaction and as to whether that Transaction is appropriate or proper for it based upon its own judgment and upon advice from such advisers as it has deemed necessary.  It is not relying on any communication (written or oral) of the other party as investment advice or as a recommendation to enter into that Transaction, it being understood that information and explanations related to the terms and conditions of a Transaction will not be considered investment advice or a recommendation to enter into that Transaction.  No communication (written or oral) received from the other party will be deemed to be an assurance or guarantee as to the expected results of that Transaction.
 
-ii) **Assessment and Understanding.**  It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction.  It is also capable of assuming, and assumes, the risks of that Transaction.
+(ii) **Assessment and Understanding.**  It is capable of assessing the merits of and understanding (on its own behalf or through independent professional advice), and understands and accepts, the terms, conditions and risks of that Transaction.  It is also capable of assuming, and assumes, the risks of that Transaction.
 
-iii) **Status of Parties.**  The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction.
+(iii) **Status of Parties.**  The other party is not acting as a fiduciary for or an adviser to it in respect of that Transaction.
 
-iv) **Eligible Contract Participant.**  It is an “eligible contract participant”, as defined in Section 1a(18) of the U.S. Commodity Exchange Act, 7 U.S.C. § 1a(18), and implementing regulations adopted by the U.S. Commodity Futures Trading Commission (“CFTC”).
+(iv) **Eligible Contract Participant.**  It is an “eligible contract participant”, as defined in Section 1a(18) of the U.S. Commodity Exchange Act, 7 U.S.C. § 1a(18), and implementing regulations adopted by the U.S. Commodity Futures Trading Commission (“CFTC”).
 
 l) ***Recording of Conversations.***  Each party (i) consents to the recording of telephone conversations between the trading, marketing and other relevant personnel of the parties and their Affiliates in connection with this Agreement or any potential Transaction, (ii) agrees to obtain any necessary consent of, and give any necessary notice of such recording to, its relevant personnel and (iii) agrees, to the extent permitted by applicable law and subject to applicable defenses, that recordings may be submitted in evidence in any Proceedings.
 
