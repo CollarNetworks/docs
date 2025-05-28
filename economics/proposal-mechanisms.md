@@ -16,7 +16,7 @@ In the synchronous model, Suppliers and Providers respond directly to specific b
 
 ![Suppliers Offer Request Page](/static/images/supplier-offer-request.png)
 
-- Upon viewing a request, solvers can send a proposal tailored to the user's ask:
+- Upon viewing a request, solvers can send a proposal tailored to the user's ask by clicking the "Propose" button:
   - **Suppliers** submit an **Escrow Proposal**, specifying:
     - Interest APR
     - Late Fee APR
@@ -54,8 +54,28 @@ In the asynchronous model, Suppliers and Providers offer terms for theoretical l
 
 ### How It Works
 
-- Solvers see a list of **hypothetical loan configurations**, grouped by duration and other factors.
+- Solvers see a list of **hypothetical loan configurations**, grouped by the duration of the loan
+
+![Swap and Escrow Offer Page](/static/images/swap-and-escrow-offer.png)
+
 - For each loan type, they can specify the terms they are willing to offer.
+  - **Suppliers** submit **Escrow Offers**, specifying:
+    - Interest APR
+    - Late Fee APR
+    - Grace Period (1–30 days)
+    - Amount (*the amount of collateral to be locked in the offer*)
+    - Min Escrow (*the minimum amount of collateral that must be locked in a single position*)
+   
+![Create Escrow Offer Page](/static/images/create-escrow-offer.png)
+
+  - **Providers** submit **Swap Offers**, specifying:
+    - Floor (LTV %)
+    - Cap (Strike %)
+    - Amount (*the amount of cash to be locked in the offer*)
+    - Min Locked (*the minimum amount of cash that must be locked in a single position*)
+   
+![Create Swap Offer Page](/static/images/create-swap-offer.png)
+
 - These proposals are made **ahead of time** and remain active until accepted or depleted.
 - When a user matches with a pre-submitted proposal, it is applied instantly.
 - As proposals get accepted and filled, the associated capital allocation decreases, prompting solvers to **"top off"** to maintain availability.
