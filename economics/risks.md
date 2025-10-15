@@ -37,6 +37,7 @@ DeFi lending protocols operate in a rapidly evolving regulatory environment. Cha
 Note on mitigation: Votre maintains active dialogue with legal counsel across key jurisdictions and structures its entities in compliance with applicable laws. The protocol also adapts product design and disclosures as regulatory clarity improves.
 !!!
 
+===
 
 ---
 
