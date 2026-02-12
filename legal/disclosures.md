@@ -20,3 +20,11 @@ As required by the ECOA, Votre and its affiliates do not discriminate based on r
 Notice for Active-Duty Servicemembers: SCRA Interest Rate Reduction
 
 Active-duty servicemembers may qualify for an interest rate cap of 6% on eligible pre-service loans, as provided under the Servicemembers Civil Relief Act (SCRA). To apply, please submit a written request along with proof of active-duty status (e.g., military orders) to support@votre.xyz. For questions, contact us at support@votre.xyz. Thank you for your service.
+
+Principal Trading Disclosure
+
+Votre acts as principal in all transactions and does not serve as an agent, broker, or fiduciary on your behalf. We do not provide investment, legal, tax, or accounting advice. You should consult your own advisors before entering into any transaction.
+
+Transaction terms—including premium, notional amount, strike prices, margin requirements, and maturity dates—are determined on a bilateral basis and may include a dealer markup. If applicable, this markup will be disclosed to you prior to execution.
+
+Votre may engage in hedging activities related to its exposure in a transaction. These hedges may not fully offset market risk and may result in Votre retaining residual profits. In some cases, Votre may financially benefit from adverse movements in the price of underlying assets due to such hedging or other risk management practices.
